@@ -1,0 +1,28 @@
+.idebenoneAmpoule_section_first {
+    max-width: 100vw;
+    max-height: 100%;
+}
+
+.idebenoneAmpoule_section_first {
+    /* border: 3px solid black; */
+    width: 100vw;
+}
+
+
+/* idebenoene image */
+
+.idebenoneAmpoule_section_first_image img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+@media only screen and (max-width: 700px) {
+    .idebenoneAmpoule_section_first_image img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100% !important;
+    }
+}

@@ -1,0 +1,1545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Style.css is link here -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!--  -->
+    <link rel="stylesheet" href="./css/brandstory.css">
+    <link rel="stylesheet" href="./css/shopping_cart_details.css">
+
+    <!-- Bootstrap Css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+
+    <!-- Bootstrap js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+    <!-- Social Media Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+    <!-- Font awesome -->
+    <!-- <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet" /> -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet" />
+
+    <!-- Slider Carousel Css  -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+    <!-- Main javascript link -->
+    <!-- <script src="js/main.js"></script> -->
+    <!-- times font style -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet" />
+
+    <!-- ajax scrolling effect -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery. .js"></script>
+
+    <!-- Home Page Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- star plugin -->
+    <script src="/path/to/cdn/jquery.slim.min.js"></script>
+    <script src="./dist/rating.js"></script>
+
+    <!-- Social Media Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <!-- Home Page Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <link rel="shortcut icon" href="./images/uv1.PNG" style="object-fit: contain; width: auto;">
+
+    <!-- Slider Carousel Css  -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="/path/to/cdn/font-awesome/5.x.x/css/all.min.css"/>
+    <title>UltraV</title>
+
+    <style>
+        .owl-nav button {
+            position: absolute;
+            color: #fff;
+            transition: all 0.3s ease-in-out;
+            top: 45%;
+            transform: translateY(-50%);
+            background: rgba(255, 255, 255, 0.38) !important;
+            /* background-color: lavender !important; */
+            font-size: 50px !important;
+        }
+
+        .owl-nav button.owl-prev {
+            /* background-color: black !important; */
+            left: 1px;
+        }
+
+        .owl-nav button.owl-next {
+            /* color: black !important; */
+            right: 1px;
+        }
+
+        .owl-dots {
+            text-align: center;
+            padding-top: 15px;
+        }
+
+        .owl-dots button.owl-dot {
+            width: 9px;
+            height: 9px;
+            border-radius: 50%;
+            display: inline-block;
+            background: lavender !important;
+            margin: 0 3px;
+        }
+
+        .owl-dots button.owl-dot.active {
+            background-color: #ecb02e !important;
+        }
+
+        .owl-dots button.owl-dot:focus {
+            outline: none;
+            background-color: lavender;
+        }
+
+        .owl-nav button:focus {
+            outline: none;
+            background-color: lavender;
+        }
+
+        nav>.nav.nav-tabs {
+            border: none;
+            color: #fff;
+            background: black;
+            border-radius: 0;
+        }
+
+        nav>div a.nav-item.nav-link,
+        nav>div a.nav-item.nav-link.active {
+            border: none;
+            padding: 18px 25px;
+            color: #fff;
+            background-color: black;
+            border-radius: 0;
+        }
+
+        nav>div a.nav-item.nav-link.active:after {
+            content: "";
+            position: relative;
+            bottom: -60px;
+            left: -10%;
+            border: 15px solid transparent;
+            /* border-top-color: black; */
+        }
+
+        .tab-content {
+            background: #fdfdfd;
+            line-height: 25px;
+            border: 1px solid #ddd;
+            border-top: 2px solid black !important;
+            border-bottom: 5px solid #f1f4f5;
+            padding: 30px 25px;
+        }
+
+        nav>div a.nav-item.nav-link:hover,
+        nav>div a.nav-item.nav-link:focus {
+            border: none;
+            /* background: #f3b229; */
+            /* color: #fff; */
+            border-radius: 0;
+            transition: 0.20s linear;
+        }
+
+        .total-like-user-main a {
+            display: inline-block;
+            margin: 0 -17px 0 0;
+        }
+
+        .total-like {
+            border: 1px solid;
+            border-radius: 50px;
+            display: inline-block;
+            font-weight: 500;
+            height: 34px;
+            line-height: 33px;
+            padding: 0 13px;
+            vertical-align: top;
+        }
+
+        .restaurant-detailed-ratings-and-reviews hr {
+            margin: 0 -24px;
+        }
+
+        .graph-star-rating-header .star-rating {
+            font-size: 17px;
+        }
+
+        .progress {
+            background: #f2f4f8 none repeat scroll 0 0;
+            border-radius: 0;
+            height: 30px;
+        }
+
+        .rating-list {
+            display: inline-flex;
+            margin-bottom: 15px;
+            width: 100%;
+        }
+
+        .rating-list-left {
+            height: 16px;
+            line-height: 29px;
+            width: 10%;
+        }
+
+        .rating-list-center {
+            width: 80%;
+        }
+
+        .rating-list-right {
+            line-height: 29px;
+            text-align: right;
+            width: 10%;
+        }
+
+        .restaurant-slider-pics {
+            bottom: 0;
+            font-size: 12px;
+            left: 0;
+            z-index: 999;
+            padding: 0 10px;
+        }
+
+        .restaurant-slider-view-all {
+            bottom: 15px;
+            right: 15px;
+            z-index: 999;
+        }
+
+        .offer-dedicated-nav .nav-link.active,
+        .offer-dedicated-nav .nav-link:hover,
+        .offer-dedicated-nav .nav-link:focus {
+            border-color: #e8eaf1;
+            color: #e1e2e6;
+        }
+
+        .offer-dedicated-nav .nav-link {
+            border-bottom: 2px solid #fff;
+            color: #000000;
+            padding: 16px 0;
+            font-weight: 600;
+        }
+
+        .offer-dedicated-nav .nav-item {
+            margin: 0 37px 0 0;
+        }
+
+        .restaurant-detailed-action-btn {
+            margin-top: 12px;
+        }
+
+        .restaurant-detailed-header-right .btn-success {
+            border-radius: 3px;
+            height: 45px;
+            margin: -18px 0 18px;
+            min-width: 130px;
+            padding: 7px;
+        }
+
+        .text-black {
+            color: #000000;
+        }
+
+        .icon-overlap {
+            bottom: -23px;
+            font-size: 74px;
+            opacity: 0.23;
+            position: absolute;
+            right: -32px;
+        }
+
+        .menu-list img {
+            width: 41px;
+            height: 41px;
+            object-fit: cover;
+        }
+
+        .restaurant-detailed-header-left img {
+            width: 88px;
+            height: 88px;
+            border-radius: 3px;
+            object-fit: cover;
+            box-shadow: 0 .125rem .25rem rgba(0, 0, 0, 0.075) !important;
+        }
+
+        .reviews-members .media .mr-3 {
+            width: 56px;
+            height: 56px;
+            object-fit: cover;
+        }
+
+        .rounded-pill {
+            border-radius: 50rem !important;
+        }
+
+        .total-like-user {
+            border: 2px solid #fff;
+            height: 34px;
+            box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
+            width: 34px;
+        }
+
+        .total-like-user-main a {
+            display: inline-block;
+            margin: 0 -17px 0 0;
+        }
+
+        .total-like {
+            border: 1px solid;
+            border-radius: 50px;
+            display: inline-block;
+            font-weight: 500;
+            height: 34px;
+            line-height: 33px;
+            padding: 0 13px;
+            vertical-align: top;
+        }
+
+        .restaurant-detailed-ratings-and-reviews hr {
+            margin: 0 -24px;
+        }
+
+        .graph-star-rating-header .star-rating {
+            font-size: 17px;
+        }
+
+        .progress {
+            background: #f2f4f8 none repeat scroll 0 0;
+            border-radius: 0;
+            height: 30px;
+        }
+
+        .rating-list {
+            display: inline-flex;
+            margin-bottom: 15px;
+            width: 100%;
+        }
+
+        .rating-list-left {
+            height: 16px;
+            line-height: 29px;
+            width: 10%;
+        }
+
+        .rating-list-center {
+            width: 80%;
+        }
+
+        .rating-list-right {
+            line-height: 29px;
+            text-align: right;
+            width: 10%;
+        }
+
+        .restaurant-slider-pics {
+            bottom: 0;
+            font-size: 12px;
+            left: 0;
+            z-index: 999;
+            padding: 0 10px;
+        }
+
+        .restaurant-slider-view-all {
+            bottom: 15px;
+            right: 15px;
+            z-index: 999;
+        }
+
+        .progress {
+            background: #f2f4f8 none repeat scroll 0 0;
+            border-radius: 0;
+            height: 30px;
+        }
+
+        @import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+        /* fieldset, label { margin: 0; padding: 0; }
+                        body{ margin: 20px; }
+                        h1 { font-size: 1.5em; margin: 10px; } */
+        /****** Style Star Rating Widget *****/
+
+        .rating {
+            border: none;
+            float: left;
+        }
+
+        .rating>input {
+            display: none;
+        }
+
+        .rating>label:before {
+            margin: 5px;
+            font-size: 1.25em;
+            font-family: FontAwesome;
+            display: inline-block;
+            content: "\f005";
+        }
+
+        .rating>.half:before {
+            content: "\f089";
+            position: absolute;
+        }
+
+        .rating>label {
+            color: #ddd;
+            float: right;
+        }
+
+        .star_center {
+            /* display: flex; */
+            /* justify-self: c; */
+            /* border: 2px solid red; */
+            /* margin-left: px; */
+            /* margin: auto; */
+            /* /* align-items: center; */
+            justify-self: center;
+        }
+
+        /***** CSS Magic to Highlight Stars on Hover *****/
+
+        .rating>input:checked~label,
+        /* show gold star when clicked */
+
+        .rating:not(:checked)>label:hover,
+        /* hover current star */
+
+        .rating:not(:checked)>label:hover~label {
+            color: #f3b229;
+        }
+
+        /* hover previous stars in list */
+
+        .rating>input:checked+label:hover,
+        /* hover current star when changing rating */
+
+        .rating>input:checked~label:hover,
+        .rating>label:hover~input:checked~label,
+        /* lighten current selection */
+
+        .rating>input:checked~label:hover~label {
+            color: #f3b229;
+        }
+
+        /*  add a review ends here */
+        /* New star */
+
+        .star {
+            color: #f3b229;
+            font-size: 2.0rem;
+            padding: 0;
+            /* space out the stars */
+        }
+
+        .star::before {
+            content: '\2606';
+            cursor: pointer;
+        }
+
+        .star:hover::before {
+            /* the :hover should come first */
+            content: '\2605';
+            color: #f3b229;
+        }
+
+        .star.rated::before {
+            /* the :hover should come first */
+            content: '\2605';
+        }
+
+        .container {
+            /* margin-top: 30px;
+                        margin-bottom: 40px; */
+        }
+
+        .in-image img {
+            width: 45%;
+            /* height: 80%; */
+            /* height: 100%;/ */
+        }
+
+        /* carousel indicators */
+        /* #custCarousel {
+                        border: 1px solid black;
+                    } */
+
+        #custCarousel .carousel-indicators {
+            position: static;
+            padding-top: 30px;
+        }
+
+        /* Carousel indicators */
+
+        #custCarousel .carousel-indicators>li {
+            width: 100px;
+            height: 30px;
+        }
+
+        /* image opacity */
+
+        #custCarousel .carousel-indicators li img {
+            display: block;
+            opacity: 0.6;
+            border: 1px solid black;
+        }
+
+        #custCarousel .carousel-indicators li.active img {
+            opacity: 1;
+        }
+
+        #custCarousel .carousel-indicators li:hover {
+            opacity: 2;
+        }
+
+        .carousel-item img {
+            /* width: fit-content; */
+            /* width: 50%; */
+            /* margin-top: 8%; */
+            /* margin: auto; */
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .carousel span {
+            color: black !important;
+        }
+    </style>
+</head>
+<body>
+    <!-- <button onclick="topFunction()" id="myBtn" title="Go to top" style="width: 20px;height:20px;"></button> -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="images/toparrow.png" width="15px; height:12px;" style="object-fit: contain;"></button>
+
+    <!--Navbar starts here-->
+    <nav class="navbar navbar-expand-lg navbar-dark default-color fixed-top">
+       
+        <a href="index.html" id="uvlogo"><img class="logo_dark" href="index.html" src="./images/ultrav_logo.png" alt="UltraV" width="140px" ;/></a>
+
+        <a class="nav-link" id="cart-icon-mob" href="cart.html"><img src="images/shp_icon.png" style="width: 25px;height: 25px;"/>
+            <span class="" style="font-size: 20px;color: white;"><sup id="crt">0</sup></span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        <!-- <a class="nav-link" href="addtocartnew.html"><img src="images/shp_icon.png" style="width: 25px;height: 25px;"></i>
+            <span class="" style="font-size: 20px;color: white;"><sup id="crt">0</sup></span>
+        </a>      -->
+
+    </button>
+   
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./brandstory.html">Brand Story</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./idebenone.html">Idebenone</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://idebenoneampoule.com/">Idebenone Ampoule</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./shop.html">Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">Contact Us</a>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav nav-flex-icons">
+                <!-- search_box -->
+                <li class="nav-item">
+                    <div class="search-box">
+                        <input class="search-txt" type="text" name="" value="" placeholder="Search here..." style="font-weight: 700;" />
+                        <a class="search-btn" href="#">
+                            <i class="fa fa-search" style="color: black;"></i>
+                        </a>
+                    </div>
+                </li>
+                <!-- <li class="nav-item">
+                                    <a class="nav-link waves-effect">
+                                        
+                                        <i class="fas fa-shopping-cart"></i>
+                                        <span class="clearfix d-none d-sm-inline-block"> Cart </span>
+                                    </a>
+                </li> -->
+
+                <!-- shopping_cart -->
+                <li class="nav-item cart_icon">
+                    <a class="nav-link" href="cart.html"><img src="images/shp_icon.png" style="width: 25px;height: 25px;"/>
+                        <span class="" style="font-size: 20px;color: white;"><sup id="crt">0</sup></span>
+                    </a>
+                </li>
+
+                <!-- user_account -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="images/user_acc_logo.png" style="width: 30px; height: 30px;filter: invert(1);">
+                    </a>
+
+                    <!-- <i class="fas fa-user" style="font-size: 20px;"></i>
+                                <i class="fas fa-user"></i>
+
+                    <!-- Log in and Sign Up button  -->
+                    <div class="dropdown-menu dropdown-menu-right" style="background-color: white;" aria-labelledby="navbarDropdownMenuLink-333">
+                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#exampleModal1" style="color: black !important;font-weight: bold;"><i class="fas fa-sign-in-alt" style="padding-right: 20px;"></i>Log in</a>
+                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#exampleModal2" style="color: black !important;font-weight: bold;"><i class="fas fa-user-plus" style="padding-right: 20px;"></i>Sign Up</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="search-box-mob search_mob" id="search_field">
+            <input class="search-txt-mob" type="text" name="" value="" placeholder="Search here..." style="font-weight: 700;" />
+            <a class="search-btn" href="#" style="text-decoration: none;">
+                <i class="fa fa-search" style="color: black;"></i>
+            </a>
+        </div>
+    </nav>    
+    
+    
+    
+    
+    <!-- Breadcrumb Starts  -->
+    <section class="">
+        <div class="row">
+            <div class="col-md-12 col-xs-12">
+                <div class="main_title">
+                    <div class="breadcrumbs">
+                        <a href="index.html">Home &gt;</a>
+                        <a href="shopping_cart_details4.html"><span style="">Product Details</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcrumbs ends -->
+
+    <!--Main layout-->
+    <main class="">
+        <!-- <center><h1 style="font-family: Merriweather, serif;">Products Details</h1></center> -->
+        <div class="contain" style="max-width: 85vw; margin: auto; margin-top: 10px;">
+            <!--Grid row Starts-->
+        
+            <!--Grid row Ends-->
+        </div>
+        <!-- Prod Desc Ends -->
+
+        <!-- Product Description Starts here  -->
+        <div class="freq_bought" style="margin-top:3%;">
+            <div class="row">
+                <div class="col-md-12" style="width: 100%;">
+                    <nav>
+                        <div class="nav nav-tabs nav-fill prod_details mt-4" id="nav-tab" role="tablist">
+                            <!-- 1 -->
+                            <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab"
+                                onclick="myFunction()">Privacy Policy
+                            </a>
+                            <!-- 2 -->
+                            <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab"
+                                onclick="myFunction1()">Shipping & Reurn Policy
+                            </a>
+                            <!-- 3 -->
+                            <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab"
+                                onclick="myFunction2()">Terms & Conditions
+                            </a>
+                        </div>
+                    </nav>
+
+                    <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent" style="background-color: white; padding: 0px 50px;">
+                        <div class="tab-pane priv_policy" id="nav-home">
+
+                            <!-- 1st -->
+                            <p style="text-align: center;">On this page of the website, the term ‘Idebenoneampoule.com’ or ‘us’ or ‘we’ refers to the owner of the website, Idebenoneampoule.com, and entities within the Eterno Distributors company. The term ‘you’ refers to the user or viewer of our website, or the client as the context requires.</p>
+                            <h5>DATA & PRIVACY POLICY</h5>
+                            <p>At Idebenoneampoule.com, we guarantee that all the data you send to us is processed fairly and lawfully, and with due skill and care. We will also guarantee you that the data you submit is solely used in accordance with the purposes as set out in this policy.</p>
+                     
+                            <!-- 2nd -->
+                            <h5>Collection and Use of your Personal Information:</h5>
+                            <p>Idebenoneampoule.com collects and uses your personal information where. Personal information will generally consist of your name, contact details and other information related to your purchase history. Idebenoneampoule.com will confirm your consent for us to hold your personal information before it is stored and processed. The personal data will be requested, stored, processed, used and disclosed by Idebenoneampoule.com: </p>
+                            
+                            <li>To ensure the highest levels of safety </li>
+                            <li>To maintain the highest level of customer service</li>
+                            <li>Where we have a bona fide requirement by law to disclose it to third parties in relation to the detection of crime, the collection of taxes or duties, in order to comply with any applicable law and court orders</li>
+                            <li>To ensure adequate resolutions and continuity for the client on any issues which may arise</li>
+                            <li>To conduct essential correspondence</li>
+                            <li>Promote relevant offers on our products for marketing purposes</li>
+ 
+                            <p>This list is not exhaustive, and we may seek to process, use, or disclose your information for any other purpose which has not been listed above always with your explicit consent.</p>
+                            <p>We reserve the right to assign your data to a third party in the event of a sale, merger, liquidation, receivership or transfer of all the assets of our company in circumstances where the third party agrees to observe the terms of this Privacy Policy. Idebenoneampoule.com will notify you of such circumstances and you will be afforded an opportunity to opt-out.</p>
+                            <p>We will use our best endeavours to guarantee that all Personal Data that you have submitted to us is maintained and up to date. However, it is your responsibility to inform us of any changes to your Personal Data to ensure that it is up to date.</p>
+                            <p>Where we currently hold personal information about you, you may at any time request that we modify, update, erase or provide a copy of this information to you. All such deletions and date updates should be sent to info@eternodistributors.com from the email address of record and these will be actioned within thirty days upon receival of all relevant details and you will receive confirmation that this has been completed. We may only refuse your request where we are legally obliged to do so. Where your request has been refused, we will provide you with reasons for this refusal. We will then hold such data for only if it is necessarily required by law.</p>
+                            <h5>Security of Your Information:</h5>
+                            <p>We are committed to the protection of Personal Information submitted to us. To prevent unauthorised access or disclosure, we have put in place suitable physical, electronic and managerial procedures to safeguard and secure the information we collect online. We use a variety of security technologies and procedures to help protect your personal information from unauthorised access, use, or disclosure. While Idebenoneampoule.com takes all due care in ensuring the privacy and integrity of the information that you provide, we recognise that no data transmission over the Internet can be guaranteed to be 100% secure. The possibility exists that this information could be unlawfully observed by a third party while in transit over the Internet. Idebenoneampoule.com accepts no liability should this occur.</p>
+                        
+                            <!-- 3rd -->
+                            <h5>COOKIE POLICY</h5>
+                            <p>What are Cookies?</p>
+                            <p>A cookie is a small text file, which often includes a unique identifier that is sent to your computer browser from a website’s computer and is stored on your computer’s hard drive. Some cookies are only placed on your device for the time you are browsing the website. Others may be stored on your device and sent back to the originating website on each subsequent visit, or to another website that recognises that cookie. Cookies are useful because they allow a website to recognise a user’s device. Your browser only allows a website to access the cookies it has already sent to you, not the cookies sent to you by other websites. You can find more information about cookies, at www.allaboutcookies.org.</p>
+    
+                            <!-- 4th -->
+                            <h5>Idebenoneampoule.com and Cookies:</h5>
+                            <p>Our policy is to use cookies only to improve the way we do business with you or when they’re essential for our service to work. We specifically do not use cookies to store sensitive details other data that could be used to identify you as an individual. Idebenoneampoule.com uses cookies and similar small bits of software to improve the performance and enhance the user experience of our website. The use of cookies is common practice on the majority of websites. Without these cookies many of the functions required to enable our users to make purchases would not be available. The types of activities we may use cookies for are to:</p>
+                            <li>Store details that help you to manage accounts such as user login details.</li>
+                            <li>Help us to provide relevant information, such as details about our products, offers and other information that you may be interested in.</li>
+                            <li>Some pages of our website also include third party cookies, which are cookies not set by Idebenoneampoule.com.</li>
+                            <li>These cookies are usually supplied by our business partners and help us to make sure that we only send you information that’s interesting and relevant to you and for analytical purposes.</li>
+                        
+                            <!-- 5th -->
+                            <h5>Cookies Used:</h5>
+                            <p>To monitor site usage to allow us to provide a better user experience and to improve our products and services.
+                                Google analytics – They allow us to recognise and count the number of visitors and to see how visitors move around the site when they are using it. This helps us to improve the way our website works. These cookies collect information in an anonymous form.
+                                </p>
+                            <p>CC Avenue – To handle payments. As we don’t store any credit card details on our servers, we need CC Avenue to be able to set some cookies to process your payments for us. </p>
+                        
+                            <!-- 6th -->
+                            <h5>Accepting or rejecting cookies: </h5>
+                            <p>Most web browsers will accept cookies, but if you would prefer, we do not collect data by this method, you can disable this function within your browser settings. If you want to delete any cookies that are already on your computer, please refer to the instructions for your file management software to locate the file or directory that stores cookies. </p>
+                      
+                             <!-- 7th -->
+                             <h5>Links to Other Websites:</h5>
+                             <p>Our website may contain links to websites of other organisations. This privacy policy does not cover how that organisation processes Personal Data. We encourage you to read the privacy policies on the other websites you visit. </p>
+                       
+                             <!-- 8th -->
+                             <h5>Children’s Privacy:</h5>
+                             <p>Our website is directed to be used by adults only. If you are not an adult, while you may look at our site, you should not make a purchase, register, or submit Personal Data to us. We or our associates /affiliates do not knowingly collect information from minors. </p>
+                       
+                            <!-- 9th -->
+                            <h5>Changes to this Privacy Statement:</h5>
+                            <p>Where a change is made to this Privacy Policy it will be set out on our websites to ensure that you are aware of what information we collect and how we will use it. If we plan to use Personal Data in a way that is inconsistent from that stated in this Privacy Policy, we will inform you in advance by email or phone call if applicable, and it will be your decision as to whether or not you are happy that we continue store </p>
+                        </div>
+
+
+                        <!-- 2nd Tab-->
+                        <!-- Returns -->
+
+                        <div class="tab-pane show active shipp_policy" id="nav-profile">
+                             <h5>RETURNS</h5>
+                             <p>Thank you for shopping with idebenoneampoule.com </p>
+                             <p>We offer a simple & straight-forward return policy. You can raise a return/exchange request for a product within 7 days of its delivery for the following reasons:</p>
+                             <li>The internal packaging is damaged, or the product is damaged on receipt</li> 
+                             <li>The product is not genuine</li>
+
+                            <h5>We accept partial returns wherein you can raise a return request for one or all products in your order.</h5>
+                            <li>To be eligible for a return, your item must be unused and in the same condition that you received it.</li>
+                            <li>Your item must be in the original packaging.</li>
+                            <li>Please retain the outer packing and bubble wrap etc as you will need to repack the good you are returning in this.</li>
+                            <li>Your item needs to have the receipt or proof of purchase.</li>
+
+                            <h5>Note</h5>
+                            <li>You need to return the products in the original outer box with bubble wrap etc in the same manner the product was received.</li>
+                            <li>Any freebies/complimentary/tester products received with your order will also have to be returned along with the damaged/inauthentic product.</li>
+                            <li>In case of inauthentic products complains, we will verify whether the product is genuine or not and our decision will be final and binding (mostly this process will be done via pictures over email).</li>
+
+                            <h5>How to go about it:</h5>
+                            <li>Step 1: Contact our Customer Care team via email (info@eternodistributors.com) within 7 business days of receiving the order.</li>
+                            <li>Step 2: Provide us with your order ID details and your reason for requesting a return/ replacement/ refund your order. Kindly email a picture of the product you want returned and the invoice for our reference.</li>
+                            <li>Step 3: If we are proceeding with inspection of the physical product, we will arrange for a pick within 2-4 business days (you must pack it in the original outer box with bubble wrap etc as you received it)</li>
+                            <li>Step 4: If on physical inspection we agree the product is not genuine and/or there has been damage to the internal packaging, we will initiate the refund or replacement process.</li>
+                        
+                            <h5>REFUNDS</h5>
+                            <li>Once we receive your item, we will notify you on the status of your refund after inspecting the item.
+                                If your return is approved, we will initiate a refund to your credit card (or original method of payment).
+                                You will receive the credit within a certain amount of days, depending on your card issuer's policies.
+                            </li>
+
+                            <h5>We do not allow returns for products subjected to the following conditions: </h5>
+                            <li>Product is damaged due to misuse/overuse</li>
+                            <li>Returned without original packaging including, price tags, labels, original packing, freebies and other accessories or if original packaging is damaged</li>
+                            <li>Serial Number is tampered with</li>
+                            <li>Product is used or altered</li>
+                            <li>If request is initiated after 7 business days of order delivery</li>
+                            <li>Free/Complimentary product provided as an offer or promotion CANNOT be exchanged or refunded for any reason</li>
+
+                            <h5>Late or missing refunds</h5>
+                            <li>If you haven’t received a refund yet, first check your bank account again</li>
+                            <li>Then contact your credit card company, it may take some time before your refund is officially posted</li>
+                            <li>Next contact your bank. There is often some processing time before a refund is posted</li>
+                            <li>If you’ve done all of this and you still have not received your refund yet, please contact us at info@eternodistributors.com</li>
+                            
+                            <h5>Sale items</h5>
+                            <li>Only regular priced items may be refunded, unfortunately sale items cannot be refunded.</li>
+                    
+                            <h5>CONTACT US</h5>
+                            <li>If you have any questions on how to return your item to us, contact us.</li>
+                        </div>
+
+                        <!-- Terms and condition -->
+                        <div class="tab-pane terms_cond" id="nav-contact">
+                               <!-- 1. -->
+                            <h5>1.	USE OF THE PLATFORM</h5>
+                            <p>Welcome to https://www.idebenoneampoule.com/ ("Site" or " Idebenoneampoule.com "). The website Idebenoneampoule.com is owned and operated by Eterno Distributors. You may be accessing our Site from a computer or mobile phone device (through an iOS or Android application, for example) and these Terms of Use govern your use of our Site and your conduct, regardless of the means of access. These Terms of Use govern all the products offered on the Platform including the Interactive Services.
+                                The Platform is only to be used for your personal non-commercial use and information. Your use of the services and features of the Platform shall be governed by these Terms and Conditions (hereinafter "Terms of Use ") along with the Privacy Policy, Shipping Policy and Cancellation, Refund and Return Policy (together "Policies") as modified and amended from time to time.
+                                By mere accessing or using the Platform, you are acknowledging, without limitation or qualification, to be bound by these Terms of Use and the Polices, whether you have read the same or not. 
+                            </p>
+                            <p>Accessing, browsing, or otherwise using the platform indicates your unconditional agreement to all the terms and conditions in this agreement, so please read this agreement carefully before proceeding. If you do not agree to any of the terms enumerated in the Terms of Use or the Policies, please do not use the Platform. You are responsible to ensure that your access to this Platform and material available on or through it are legal in each jurisdiction, in or through which you access or view the platform or such material.
+                                Idebenoneampoule.com reserves the unilateral right to change the particulars contained in the Terms of Use or the Policies from time to time and at any time, without notice to its users and in its sole discretion. If Idebenoneampoule.com decides to change the Terms of Use or Policies, Idebenoneampoule.com will post the new version of the Terms of Use or the Policies on the Site and update the date specified above. Any change or modification to the Terms of Use and the Policies will be effective immediately from the date of such upload of the Terms of Use and Policies on the Site. Your continued use of the Platform following the modifications to the Terms of Use and Policies constitutes your acceptance of the modified Terms of Use and Policies whether you have read them. For this reason, you should frequently review these Terms of Use, our Guidelines and Rules and any other applicable policies, including their dates, to understand the terms and conditions that apply to your use of the Site.
+                            </p>
+                            <p>
+                                If you do not agree to any of the terms enumerated in the Terms of Use or the Policies, please do not use the Platform. You are responsible to ensure that your access to this Platform and material available on or through it are legal in each jurisdiction, in or through which you access or view the platform or such material.
+                                Idebenoneampoule.com reserves the unilateral right to change the particulars contained in the Terms of Use or the Policies from time to time and at any time, without notice to its users and in its sole discretion. If Idebenoneampoule.com decides to change the Terms of Use or Policies, Idebenoneampoule.com will post the new version of the Terms of Use or the Policies on the Site and update the date specified above. Any change or modification to the Terms of Use and the Policies will be effective immediately from the date of such upload of the Terms of Use and Policies on the Site. Your continued use of the Platform following the modifications to the Terms of Use and Policies constitutes your acceptance of the modified Terms of Use and Policies whether or not you have read them. For this reason, you should frequently review these Terms of Use, our Guidelines and Rules and any other applicable policies, including their dates, to understand the terms and conditions that apply to your use of the Site.
+                             </p>
+
+                             <!-- 2 . -->
+                            <h5>2.PRIVACY PRACTICES</h5>
+                            <p>We understand the importance of safeguarding your personal information and we have formulated a Privacy Policy, to ensure that your personal information is sufficiently protected. Apart from these Terms of Use, the Privacy Policy shall also govern your visit and use of the Site. Your continued use of the Site implies that you have read and accepted the Privacy Policy and agree to be bound by its terms and conditions. You consent to the use of personal information by Idebenoneampoule.com in accordance with the terms of and purposes set forth in the Privacy Policy, the same may be subject to amendment from time to time at the sole discretion of Idebenoneampoule.com</p>
+                             
+                            <!-- 3rd -->
+                            <h5>3.YOUR ACCOUNT</h5>
+                            <p>This Site is directed to be used by adults only. We assume that any minor, if at all, accessing our Site is under the supervision of their guardians. Idebenoneampoule.com or its associates do not knowingly collect information from minors. You will be responsible for maintaining confidentiality of your account, password, and restricting access to your computer, and you hereby accept responsibility for all activities that occur under your account and password. You acknowledge that the information you provide, in any manner whatsoever, are not confidential or proprietary and does not infringe any rights of a third party in whatsoever nature</p>
+                             <p>If you are accessing, browsing, and using the Site on someone else’s behalf; you represent that you have the authority to bind that person to all the terms and conditions herein. If the person refuses to be bound as the principal to the Terms of Use, you agree to accept liability for any harm caused by any wrongful use of the Site resulting from such access or use of the Site in whatsoever nature</p>
+                             <p>If you know or have reasons to believe that the security of your account has been breached, you should contact us immediately at the 'Contact Information' provided below. If we have found a breach or suspected breach of the security of your account, we may require you to change your password, temporarily or permanently block or suspend your account without any liability to Idebenoneampoule.com.</p>
+                             <p>We reserve the right to refuse service and/or terminate accounts without prior notice if these Terms of Use are violated or if we decide, in our sole discretion, that it would be in Idebenoneampoule.com’s best interests to do so. You are solely responsible for all contents that you upload, post, email or otherwise transmit via the Site. The information provided to us shall be maintained by us in accordance with our Privacy Policy.</p>
+                        
+                            <!-- 4th -->
+                            <h5>4.PRODUCT & SERVICES INFORMATION</h5>
+                            <p>Idebenoneampoule.com attempts to be as accurate as possible in the description of the product on the Platform. However, Idebenoneampoule.com does not warrant that the product description, colour, information or other content of the Platform is accurate, complete, reliable, current or error-free. The Site may contain typographical errors or inaccuracies and may not be complete or current. The product pictures are indicative and may not match the actual product. </p>
+                            <p>Idebenoneampoule.com reserves the right to correct, change or update information, errors, inaccuracies or omissions at any time (including after an order has been submitted) without prior notice. Please note that such errors, inaccuracies or omissions may also relate to pricing and availability of the product or services.</p>
+                             
+                            <!-- 5th -->
+                            <h5>5.PRODUCT USE & SERVICES</h5>
+                            <p>The products and services available on the Platform, and the samples, if any, that Platform may provide you, are for your personal and/or professional use only. The products or services, or samples thereof, which you may receive from us, shall not be sold or resold for any/commercial reasons.</p>
+                            <p>In case any products or beauty services purchased / received / availed causes side effects or doesn’t suit you, please note that Idebenoneampoule.com is in no manner responsible for any manufactural side-effects or service provider and manufacturer or service provider of the product or service shall be solely responsible for such side effects and consumer complaints. You should carefully read the individual terms and conditions in relation to the products and beauty services and consult a specialist before the use of the same.</p>
+
+                            <!-- 6th -->
+                            <h5>6.RECOMMENDATION OF THE PRODUCT & SERVICES</h5>
+                            <p>Any recommendation made to you in the site during your use of the site is purely for informational purposes and for your convenience and does not amount to endorsement of the product or services by Idebenoneampoule.com or any of its associates in any manner.</p>
+                            
+
+                            <!-- 7th  -->
+                            <h5>7. PRICING INFORMATION</h5>     
+                            <p>Idebenoneampoule.com strives to provide accurate product and pricing information, however errors may occur.</p>          
+                            <p>Idebenoneampoule.com cannot confirm the price of the product until you make the order. Without limiting the generality of Clause 8 (Cancellations, Refunds and Returns) below, if a product / service is listed at an incorrect price or with incorrect information due to any technical error, Idebenoneampoule.com shall have the right, at its sole discretion, to refuse or cancel any orders placed for that product/ service, unless the product has already been delivered or the service has already been availed by you. If an item is wrongly priced, Idebenoneampoule.com may, at its discretion, either contact you for instructions or cancel your order and notify you of such cancellation. Unless the product ordered by you has been delivered and the services are availed, your offer will not be deemed accepted and Idebenoneampoule.com will have the right to modify the price of the product/ service and contact you for further instructions using the e-mail address provided by you during the time of registration or placing of order, or cancel the order and notify you of such cancellation. If Idebenoneampoule.com accepts your order the same shall be debited to your credit card/ debit card account and duly notified to you by email that the payment has been processed. The payment may be processed prior to Idebenoneampoule.com’s dispatch of the product that you have ordered. If we have to cancel the order after we have processed the payment, the said amount will be reversed to your credit / debit card account. </p>         
+                            <p>Prices and availability of the products and services provided or offered on the site are subject to change without prior notice and at the sole discretion of Idebenoneampoule.com. </p>
+                            <p>Idebenoneampoule.com may revise and cease to make available any product/ services at any time. In the event, Idebenoneampoule.com is unable to deliver the product to you on time or at all, you will be notified by an e-mail and your order will be automatically cancelled due to unavailability of the product or at your instructions due to failure to deliver the product on the expected time of delivery by our delivery partners. Idebenoneampoule.com shall not be liable to pay for any damages in such an event owing to cancellation of the order or delay in delivery. </p>
+                        
+                            <!-- 8th -->
+                            <h5>8.CANCELLATIONS, REFUNDS AND RETURNS</h6>
+                            <p>Please refer to our Shipping and Returns Policy provided on our Site.</p>
+                        
+                            <!-- 9th -->
+                            <h5>9.MODE OF PAYMENT</h5>
+                            <p>Payments for the products available on the Site may be made in the following ways:</p>
+                            <li>Payments can be made by Cash on Delivery, Credit Cards, Debit Cards, Net Banking, Wallets, e-Gift cards, and reward points.</li>
+                            <li>Credit card, Debit Card and Net Banking payment options are instant payment options and recommended to ensure faster processing of your order.</li>
+
+                            <!-- 10th -->
+                            <h5>10.SHIPPING AND DELIVERY</h5>
+                            <p>Please refer to our Shipping and Returns Policy provided on our Site.</p>
+
+                            <!-- 11th -->
+                            <h5>11.USER CONTENT</h5>
+                            <p>The information, photo, image, chat communication, text, software, data, music, sound, graphics, messages, videos or other materials transmitted, uploaded, posted, emailed or otherwise made available to us ("User Content "), are entirely your responsibility and we will not be held responsible, in any manner whatsoever, in connection to the User Content. You agree to not encourage or assist or engage others as well as yourself in transmitting, hosting, displaying, uploading, modifying, publishing transmitting, updating or sharing any information that</p>
+
+                            <li>1.Belongs to another person and to which the user does not have any right to;</li>
+                            <li>2.Is grossly harmful, harassing, blasphemous defamatory, obscene, pornographic, paedophilic, libellous, invasive of another's privacy, hateful, or racially, ethnically objectionable, disparaging, relating or encouraging money laundering or gambling, trolling, propaganda or otherwise unlawful in any manner whatever;</li>
+                            <li>3.Harm minors in any way;</li>
+                            <li>4.Infringes any patent, trademark, copyright or other proprietary rights;</li>
+                            <li>5.Violates any law for the time being in force;</li>
+                            <li>6.Deceives or misleads the addressee about the origin of such messages or communicates any information which is grossly offensive or menacing in nature;</li>
+                            <li>7.Impersonate another person;</li>
+                            <li>8.Contains software viruses or any other computer code, files or programs designed to interrupt, destroy or limit the functionality of any computer resource;</li>
+                            <li>9.Threatens the unity, integrity, defence, security or sovereignty of India, friendly relations with foreign states, or public order or causes incitement to the commission of any cognizable offence or prevents investigation of any offence or is insulting any other nation.</li> 
+                        
+                            <!-- 12th  -->
+                            <p>Idebenoneampoule.com shall in no way be held responsible for examining or evaluating User Content, nor does it assume any responsibility or liability for the User Content. Idebenoneampoule.com does not endorse or control the User Content transmitted or posted on the Site by you and therefore, accuracy, integrity or quality of User Content is not guaranteed by Idebenoneampoule.com. You understand that by using the Site, you may be exposed to User Content that is offensive, indecent or objectionable to you. Under no circumstances will Idebenoneampoule.com be liable in any way for any User Content, including without limitation, for any errors or omissions in any User Content, or for any loss or damage of any kind incurred by you as a result of the use of any User Content transmitted, uploaded, posted, e-mailed or otherwise made available via the Site. You hereby waive all rights to any claims against Idebenoneampoule.com for any alleged or actual infringements of any proprietary rights, rights of privacy and publicity, moral rights, and rights of attribution in connection with User Content.</p>
+                            <p>You hereby acknowledge that Idebenoneampoule.com has the right (but not the obligation) in its sole discretion to refuse to post or remove any User Content and further reserves the right to change, condense, or delete any User Content. Without limiting the generality of the foregoing or any other provision of these Terms and Conditions, Idebenoneampoule.com has the right to remove any User Content that violates these Terms and Conditions or is otherwise objectionable and further reserves the right to refuse service and/or terminate accounts without prior notice for any users who violate these Terms and Conditions or infringe the rights of others.</p>
+                            <p>If you wish to delete your User Content on our Site or in connection with our mobile applications, please contact us by email at info@eternodistributors.com and request you to include the following personal information in your deletion request: first name, last name, user name/screen name (if applicable), email address associated with our Site and/or mobile applications, your reason for deleting the posting, and date(s) of posting(s) you wish to delete (if you have it). We may not be able to process your deletion request if you are unable to provide such information to us. Please allow up to 30 business days to process your deletion request.</p>
+                        
+                            <h5>12.INTELLECTUAL PROPERTY RIGHTS</h5>
+                            <p>The "Idebenoneampoule.com”, name and logo and all related product and service names, design marks and slogans are the trademarks, logos or service marks (hereinafter referred to as "Marks") of Idebenoneampoule.com. All other Marks provided on the Site are the property of their respective companies. No trademark or service mark license is granted in connection with the materials contained on this Site. Access to this Site does not authorize anyone to use any Marks in any manner. </p>
+                            <p>The compilation (meaning the collection, arrangement, and assembly) of the content on the Site is the exclusive property of Idebenoneampoule.com and are protected by the Indian copyright laws and International treaties. Consequently, the materials on this Site shall not be copied, reproduced, duplicated, republished, downloaded, posted, transmitted, distributed, or modified in whole or in part or in any other form whatsoever, except for your personal, non-commercial use only. No right, title or interest in any downloaded materials or software is transferred to you because of any such downloading or copying, reproducing, duplicating, republishing, posting, transmitting, distributing, or modifying. </p>
+                            <p>All materials, including images, text, illustrations, designs, icons, photographs, programs, music clips, downloads, video clips and written and other materials that are part of this Site (collectively, the "Contents ") are intended solely for personal, non-commercial use. You may download or copy the Contents and other downloadable materials displayed on the Site for your personal use only. We also grant you a limited, revocable, non-transferable, and non-exclusive license to create a hyperlink to the home page of the Site for personal, non-commercial use only. The Contents and software on this Site are to be used only as a shopping resource. Any other use, including the reproduction, modification, distribution, transmission, re-publication, display, or performance, of the Contents on this Site is strictly prohibited. Unless Idebenoneampoule.com explicitly provides to the contrary, all Contents are copyrighted, trademarked, trade dressed and/or other intellectual property owned, controlled or licensed by Idebenoneampoule.com.</p>
+                        
+                            <!-- 13th -->
+                            <h5>13.LIMITED LICENSE</h5>
+                            <p>Idebenoneampoule.com grants you limited, non-exclusive, non-transferable, non-sublicensable license to access, and make personal and non-commercial use of the Site. All rights not expressly granted to you in these Terms of Use, are reserved and retained by the Site and its affiliates. </p>
+                            <p>Idebenoneampoule.com reserves the right, at any time, without notice, and at its sole discretion, to terminate your license to use the Site and to block and prevent your future access the Site.</p>
+                            
+                            <!-- 14th -->
+                            <h5>14.REPRESENTATIONS AND WARRANTIES </h5>
+                            <p>This Site is provided to you "AS IS". We make no representations regarding the use of or the result of the use/depiction of the Contents on the Site in terms of their correctness, accuracy, reliability, or otherwise. Idebenoneampoule.com shall not be liable for any loss suffered in any manner by the user because of depending directly or indirectly on the depiction of the Content on this Site.</p>
+                            <p>You acknowledge that this Site is provided only on the basis set out in the Terms of Use. Your uninterrupted access or use of this Site on this basis may be prevented by certain factors outside our reasonable control including, without limitation, the unavailability, inoperability or interruption of the internet or other telecommunications services or as a result of any maintenance or other service work carried out on this Site.</p>
+                            <p>Idebenoneampoule.com shall have the right, at any time, to change or discontinue any aspect or feature of the Site, including, but not limited to, content, hours of availability and equipment needed for access or use. Further, the Site may discontinue disseminating any portion of information or category of information. Idebenoneampoule.com does not accept any responsibility and will not be liable for any loss or damage whatsoever arising out of or in connection with any ability/inability to access or to use the Site.</p>
+                            <p>Idebenoneampoule.com through the Site intends to provide its users with general information about skincare and products. The Site encourages its users to interact with Idebenoneampoule.com and its employees by asking questions that enables the user to obtain information of a general nature pertaining to beauty and healthcare topics. The postings on the Site or on social networking sites, including the Site’s Facebook page, Instagram handle, YouTube Channel or any information provided over chat or e-mails exchanged with Idebenoneampoule.com, its employees or representatives (collectively referred to as "Information ") which are in furtherance of any communication made by the user with Idebenoneampoule.com, its employees or representatives is based on the background provided by the user. The Information is not intended to constitute personal medical suggestion or be used for any medical diagnosis or treatment. While Idebenoneampoule.com takes reasonable care to ensure that the Information is accurate, Idebenoneampoule.com makes no representation and takes no responsibility for the accuracy, completeness, appropriateness or usefulness of the Information. For any specific medical conditions or issues, users are advised to seek opinion from a certified medical practitioner. In the event any user relies on the Information provided by Idebenoneampoule.com or its representatives/ employees, he/she may do so at its own risk. Under no circumstances will Idebenoneampoule.com, its employees, representative or affiliates be liable for the Information or the consequences of relying on such Information. </p>
+                            <p>In keeping with Idebenoneampoule.com 's objective of providing \its users with general information about skincare, topics and products, Idebenoneampoule.com engages experts having knowledge of in their respective fields ("Experts ") to respond to queries posted by users. Any information provided by the Experts, either over the Site, through e-mails, chat rooms or on social networking sites, including the Site's Facebook page, Instagram Handle, YouTube Channel (collectively referred to as "Expert's Opinion") is based on the Expert’s personal opinion. The Expert's Opinion is not intended to constitute personal medical suggestion or be used for any medical diagnosis or treatment. Idebenoneampoule.com makes no representation and takes no responsibility for the accuracy, completeness, appropriateness or usefulness of the Expert's Opinion. In case any user relies on such Expert's Opinion, he/she may do so at its own risk. Under no circumstances will the Idebenoneampoule.com, Company, its employees, representative or affiliates be liable for such Expert's Opinion or for the consequences of relying on such Expert's Opinion.</p>
+                            <p>For any general information posted on the Site, users must not infer or assume that such information necessarily applies to them.</p>
+                       
+                             <!-- 15th -->
+                             <h6>15.DISCLAIMER OF WARRANTY AND LIMITATION OF LIABILITY</h6>
+                             <p>The site is presented "as is." neither we nor our holding, subsidiaries, affiliates, partners, or licensors make any representations or warranties of any kind whatsoever, express, or implied, in connection with these terms and conditions or the site or any of the content, including but not limited to warranties of merchantability, non-infringement or fitness for a particular purpose, except to the extent such representations and warranties are not legally excludable.</p>
+                             <p>You agree that, to the fullest extent permitted by applicable law, neither we nor our holding, subsidiaries, affiliates, partners, or licensors will be responsible or liable (whether in contract, tort (including negligence) or otherwise) under any circumstances for any (a) interruption of business; (b) access delays or access interruptions to the site; (c) data non-delivery, loss, theft, mis delivery, corruption, destruction or other modification; (d) loss or damages of any sort incurred as a result of dealings with or the presence of off-website links on the site; (e) viruses, system failures or malfunctions which may occur in connection with your use of the site, including during hyperlink to or from third party websites; (f) any inaccuracies or omissions in content; or (g) events beyond the reasonable control of Idebenoneampoule.com. We make no representations or warranties that defects or errors will be corrected.</p>
+                             <p>Further, to the fullest extent permitted by law, neither we nor our subsidiaries, affiliates, partners, or licensors will be liable for any indirect, special, punitive, incidental, or consequential damages of any kind (including lost profits) related to the site or your use thereof regardless of the form of action whether in contract, tort (including negligence) or otherwise, even if we have been advised of the possibility of such damages and in no event shall our maximum aggregate liability exceed.</p>
+                             <p>You agree that no claims or action arising out of, or related to, the use of the site or these terms and conditions may be brought by you more than one (1) year after the cause of action relating to such claim or action arose. If you have a dispute with us or are dissatisfied with the site, termination of your use of the site is your sole remedy. We have no other obligation, liability, or responsibility to you.</p>
+                             <p>This disclaimer constitutes an essential part of this Terms of Use.</p>
+                       
+                             <!-- 16th -->
+                             <h6>16.LINKS AND THIRD-PARTY SITES</h6>
+                             <p>References on the Site to any names, marks, products, or services of third parties or hypertext links to third party sites or information are provided solely as a convenience to you. This does not in any way constitute or imply Idebenoneampoule.com endorsement, sponsorship, or recommendation of the third party, information, product or service or any association and relationship between Idebenoneampoule.com and those third parties.</p>
+                             <p>Idebenoneampoule.com is not responsible for the content of any third-party sites and does not make any representations regarding the content or accuracy of material on such sites. If you decide to link to any such third-party websites, you do so entirely at your own risk. Idebenoneampoule.com do not assume any responsibility for examining or evaluating the offerings of the off-websites pages or any other websites linked from the Site. We shall not be responsible for the actions, content, products, or services of such pages and websites, including, without limitation, their privacy policies and terms and conditions. You should carefully review the terms and conditions and privacy policies of all off-website pages and other websites that you visit via the Site.</p>
+                             
+                             <!-- 17th -->
+                             <h6>17.TERMINATION</h6>
+                             <p>These Terms of Use are effective unless and until terminated by either you or Idebenoneampoule.com.</p>
+                             <p>You may terminate the Terms of Use at any time, if you discontinue any further use of this Site. Idebenoneampoule.com may terminate the Terms of Use at any time and may do so without notice, and accordingly deny you access to the Site, such termination will be without any liability to the Site.</p>
+                             <p>Upon any termination of the Terms of Use by either you or Idebenoneampoule.com, you must promptly destroy all materials downloaded or otherwise obtained from this Site, as well as all copies of such materials, whether made under the Terms of Use or otherwise. Any such termination of the Terms of Use shall not cancel your obligation to pay for the product already ordered from the Site or affect any liability that may have arisen under the Terms of Use.</p>
+
+                            <!-- 18th -->
+
+                            <h6>18.INDEMNITY</h6>
+                            <p>You agree to defend, indemnify and hold harmless Idebenoneampoule.com, its employees, directors, officers, agents and their successors and assigns, its holding, subsidiaries, affiliates, partners, or licensors from and against any and all claims, liabilities, damages, losses, costs and expenses, including attorney's fees, caused by or arising out of claims based upon your actions or inactions, which may result in any loss or liability to Idebenoneampoule.com or any third party including but not limited to breach of any warranties, representations or undertakings or in relation to the non-fulfilment of any of your obligations under the Terms of Use, or arising out of the your violation of any applicable laws, regulations including but not limited to Intellectual Property Rights, payment of statutory dues and taxes, claim of libel, defamation, violation of rights of privacy or publicity, loss of service by other subscribers and infringement of intellectual property or other rights. This clause shall survive the expiry or termination of the Terms of Use.</p>
+                           
+                            <!-- 19th -->
+                             <h6>19.GOVERNING LAW AND JURISDICTION</h6>
+                             <p>The Terms of Use and the Policies shall be construed in accordance with the applicable laws of India. For proceedings arising therein the Courts at Mumbai shall have exclusive jurisdiction.</p>
+                             <p>Any dispute or difference either in interpretation or otherwise, of the Terms of Use and other Policies on the Site, between the parties hereto, shall be referred to an independent arbitrator who will be appointed by mutually and his decision shall be final and binding on the parties hereto. The above arbitration shall be in accordance with the Arbitration and Conciliation Act, 1996 as amended from time to time. The seat and venue of arbitration shall be held in Mumbai.</p>
+                             <p>Without any prejudice to particulars listed in Clause 12 above, Idebenoneampoule.com shall have the right to seek and obtain any injunctive, provisional or interim relief from any court of competent jurisdiction to protect its trade-mark or other intellectual property rights or confidential information or to preserve the status quo pending arbitration.</p>
+                             <p>For disputes relating to orders outside India, International arbitration rules of Indian Arbitration and Conciliation Act 1996 shall apply. The seat and venue of international arbitration shall be Mumbai.</p>
+                        
+                            <!-- 20th  -->
+                            <h6>20.SITE SECURITY</h6>
+                            <p>You are prohibited from violating or attempting to violate the security of the Site, including, without limitation,</p>
+                            <li>1.accessing data not intended for you or logging onto a server or an account which you are not authorized to access.</li>
+                            <li>2.attempting to probe, scan or test the vulnerability of a system or network or to breach security or authentication measures without proper authorization.</li>
+                            <li>3.attempting to interfere with service to any other user, host, or network, including, without limitation, via means of submitting a virus to the Site, overloading, "flooding," "spamming," "mail bombing" or "crashing;"</li>
+                            <li>4.sending unsolicited email, including promotions and/or advertising of products or services; or</li>
+                            <li>5.forging any header or any part of the header information in any email or newsgroup posting. Violations of system or network security may result in civil or criminal liability</li>
+                            
+                            <p>Idebenoneampoule.com is entitled to investigate occurrences that may involve such violations and may involve, and co-operate with, law enforcement authorities in prosecuting users who are involved in such violations. You agree not to use any device, software or routine to interfere or attempt to interfere with the proper working of this Site or any activity being conducted on this Site. You agree, further, not to use or attempt to use any engine, software, tool, agent or other device or mechanism (including without limitation browsers, spiders, robots, avatars, or intelligent agents) to navigate or search this Site other than the search engine and search agents available from Idebenoneampoule.com on this Site and other than generally available third-party web browsers (e.g., Netscape Navigator, Microsoft Explorer).</p>
+                        
+                            <!-- 21 -->
+                            <h6>21.ENTIRE AGREEMENT</h6>
+                            <p>If any part of these Terms of Use is determined to be invalid or unenforceable pursuant to applicable law including, but not limited to, the warranty disclaimers and liability limitations set forth above, then the invalid or unenforceable provision will be deemed to be superseded by a valid, enforceable provision that most closely matches the intent of the original provision and the remainder of the Terms of Use shall continue to be in effect. Unless otherwise specified herein, these Terms of Use constitutes the entire agreement between you and Idebenoneampoule.com with respect to the Site/services and it supersedes all prior or contemporaneous communications and proposals, whether electronic, oral or written.</p>
+                            <p>Idebenoneampoule.com's failure to act with respect to a breach by you or others does not waive its right to act with respect to the breach or subsequent and similar breaches. </p>
+                             
+                            <!-- 22 -->
+                            <h6>22.GENERAL</h6>
+                            <p>You acknowledge and hereby agree to these Terms and Conditions and that it constitute the complete and exclusive agreement between us concerning your use of the Site, and supersede and govern all prior proposals, agreements, or other communications.</p>
+                            <p>We reserve the right, in our sole discretion, to change/ alter/ modify these Terms and Conditions at any time by posting the changes on the Site. Any changes are effective immediately upon posting to the Site. Your continued use of the Site thereafter constitutes your agreement to all such changed Terms and Conditions. We may, with or without prior notice, terminate any of the rights granted by these Terms and Conditions. You shall comply immediately with any termination or other notice, including, as applicable, by ceasing all use of the Site.</p>
+                            <p>Nothing contained in these Terms and Conditions shall be construed as creating any agency, partnership, affiliation, joint venture or other form of joint enterprise between us. Our failure to require your performance of any provision hereof shall not affect our full right to require such performance at any time thereafter, nor shall our waiver of a breach of any provision hereof be taken or held to be a waiver of the provision itself. In the event that any provision of these Terms and Conditions shall be unenforceable or invalid under any applicable law or be so held by any applicable arbitral award or court decision, such unenforceability or invalidity shall not render these Terms and Conditions unenforceable or invalid as a whole but these Terms and Conditions shall be modified, to the extent possible, by the adjudicating entity to most fully reflect the original intent of the parties as reflected in the original provision. The headings in the Terms and Conditions are for convenience only and shall not be used in its interpretation.</p>
+                            <p>If you have any questions regarding these Terms and Conditions, please email us at info@eternodistributors.com</p>
+                            
+                            <!-- policy ends here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- Frequently bougt together starts here -->
+       
+        <!-- changes -->
+
+
+        <!-- Review Section starts here -->
+        <div class="freq_bought fw" style="margin-bottom: 40px;margin-top: 20px;">
+            <div class="col-md-12" style="background-color:#f1f4f5">
+                <div class="offer-dedicated-body-left">
+                    <div class="tab-content" id="pills-tabContent">
+                        <!-- <h4 style="font-family: Open Sans, sans-serif;">Reviews & Ratings</h4> -->
+                        <div class="rounded shadow-sm p-4 mb-4 restaurant-detailed-ratings-and-reviews">
+                            <div class="rate" style="display: flex; flex: 1;justify-content: space-between;">
+                                <!-- <div>
+                                    <h5 class="" style="font-family: Open Sans,sans-serif; font-weight: bold;">Overall
+                                        Ratings</h5>
+                                    <h5 class="" style="font-family: Open Sans, sans-serif;">4.5</h5>
+                                </div> -->
+
+                                <!-- <div class="rate reviews_start">
+                                    <h5
+                                        style="justify-self: center;font-family: Open Sans, sans-serif; font-weight:bold;text-align: center;">
+                                        Rate Product</h5>
+                                    
+                                    <div class="" style="justify-self: center;margin: auto;">
+                                        <div class="stars" data-rating="0">
+                                            <span class="star"></span>
+                                            <span class="star"></span>
+                                            <span class="star"></span>
+                                            <span class="star "></span>
+                                            <span class="star"></span>
+                                        </div>
+                                    </div>
+                                </div> -->
+
+                                <!-- <div>
+                                    <a id="scroll_to_productreview" class="btn btn-sm"
+                                        style="background-color: #f3b229 !important; color:white; width:auto; padding: 10px 20px;"
+                                        href="#godowntoaddreview" onclick="write_review()">
+                                        Write a Review
+                                    </a>
+                                </div> -->
+                            </div>
+                           
+                            <div class="reviews-members pt-4 pb-4" id="display_reviews">
+                                <h4 style="font-family: Open Sans, sans-serif">Add a Review</h4>  
+                            </div>
+
+                            <div class="rating-review-select-page" id="scroll_to_seeallreviews">
+                                <h5 style="font-family: Open Sans, sans-serif;margin-top:10px;font-size: 20px;font-weight: bold; "
+                                    class="">All Reviews</h5>
+                                <a class="text-center w-100 d-block mt-4" href="#"
+                                    style="color: #f3b229; font-family: Merriweather, serif;">See All Reviews
+                                </a >
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Review Section Ends here -->
+    </main>
+    <!--Main layout-->
+
+
+    <!-- Modal 1 -->
+    <!-- bootstrap modal starts here for Log in-->
+    <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" style="background-color: rgb(240,240,240);">
+                <div class="modal-header">
+                    <!-- <h3>LOGIN</h3> -->
+                    <h5 class="modal-title" id="exampleModalLabel" style="font-weight:
+                 bold;">LOGIN</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <!-- <label for="recipient-name" class="col-form-label" style="font-weight:bold;">Username or Email Address *</label> -->
+                            <input type="text" class="form-control" placeholder="Email" id="recipient-name">
+                        </div>
+
+                        <div class="form-group">
+                            <!-- <label for="recipient-name" class="col-form-label" style="font-weight:bold;">Password *</label> -->
+                            <input type="password" class="form-control" placeholder="Password" id="recipient-name">
+                        </div>
+                    
+                        <button type="button" class="btn btn-warning" style="font-weight:bold;">SIGN IN </button>
+
+                        <!-- <div class="form-group">
+                            <label for="message-text" class="col-form-label">Message:</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div> -->
+                    </form>
+                </div>
+                <div class="modal-footer">
+                 <!-- Forgot Password -->
+                 <!-- opens a forgot password modal -->
+                    <a href="#exampleModal4" data-toggle="modal" data-target="#exampleModal4" style="color: red; font-weight: bold;">Forgot Password?</a>
+                    <!-- <a href="#" data-toggle="modal" data-target="exampleModal4" style="color: red; font-weight: bold;">Forgot Password?</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- bootstrap Modal for Log in ends here  -->
+
+
+
+    <!-- Modal 2 -->
+    <!-- bootstrap 2 modal starts here for Sign Up-->
+    <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" style="background-color: rgb(240, 240, 240)">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="font-weight:bold;">REGISTER</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <!-- <label for="recipient-name" class="col-form-label" style="font-weight:bold;">Full Name *</label> -->
+                            <input type="text" class="form-control" placeholder="Full Name" id="recipient-name">
+                        </div>
+                        <div class="form-group">
+                            <!-- <label for="message-text" class="col-form-label" style="font-weight:bold;">Email *</label> -->
+                            <input type="email" class="form-control" placeholder="Email" id="recipient-name">
+                        </div>
+
+                        <div class="form-group">
+                            <!-- <label for="message-text" class="col-form-label" style="font-weight:bold;">Password *</label> -->
+                            <input type="password" class="form-control" placeholder="Password" id="recipient-name">
+                        </div>
+
+                        <div class="form-group">
+                            <!-- <label for="message-text" class="col-form-label" style="font-weight:bold;">Confirm Password *</label> -->
+                            <input type="password" class="form-control" placeholder="Confirm Password" id="recipient-name">
+                        </div>
+                        <button type="button" class="btn btn-warning">SIGN UP</button>
+                    </form>
+                </div>
+
+                <div class="modal-footer">
+                    <!-- <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-warning">SUBMIT</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- bootstrap Modal Sign Up 2 ends here  -->
+
+
+   
+<!-- Modal 3 -->
+ <!-- bootstrap 3 for forgot password -->
+ <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!-- Modal Content -->
+            <div class="modal-header" tabindex="-1">
+                <div class="login">
+                    <h3>Log in <span> or </span> Create Account</h3>
+                </div>
+
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+            <!-- body -->
+            <div class="modal-body">   
+                <div class="createacc">
+                    <label style="font-weight:bold;">LOG IN WITH OTP</label>
+                    <form>
+                        <input type="text" class="form-control" placeholder="Enter otp" id="otp">
+
+                        <div class="form-group">
+                            <label for="message-text" class="col-form-label" style="font-weight:bold;">Email *</label>
+                            <input type="email" class="form-control" placeholder="Enter Password" id="recipient-name">
+                        </div>
+                        <!-- <div class="inputnum">
+                            <input type="email" id="otpEmail" class="input-text" name="otpEmail" title="Enter Email" placeholder="Enter your registered email address"	aria-required="true" />
+                        </div> -->
+                        <button class="btn btn-outline-warning" type="submit">GET OTP</button>
+                    </form> 
+                
+                    <p class="mt-2" style="font-weight: bold;">LOG IN WITH PASSWORD</p>
+                    <form method="post" action="">
+                        <!-- <input type="hidden" name="checkOutLogin" value="YES"> -->
+                        <input type="email" class="form-control" placeholder="Email" id="recipient-name">
+
+                        <div class="pswd mt-2">
+                            <input type="password" type="password" autocomplete="off" class="form-control"
+                            id="login_password" title="Password" placeholder="Password" aria-required="true">
+                            <!-- <input name="login_password" type="password" autocomplete="off" class="password-text"
+                                id="login_password" title="Password" placeholder="  Enter password" aria-required="true" /> -->
+                            <!-- <a data-toggle="modal" data-target="#exampleModal3"><span id="red">Forgot?</span></a> -->
+                            <a data-toggle="modal" data-target="#exampleModal4" style="color: red; font-weight: bold;">Forgot Password?</a>
+                        </div>
+                      
+                        <!-- <div class="custom-control custom-checkbox check-left mt-2"> -->
+                            <div class="custom-control custom-checkbox mt-2 save_info">
+                                <input type="checkbox" style="color: #f3b229 !important;" class="custom-control-input" id="save-info">
+                                <label class="custom-control-label" for="save-info">Keep me Logged in</label>
+                            </div>
+                            <!-- <input type="checkbox" class="custom-control-input" id="defaultIndeterminate3" checked>
+                            <label class="custom-control-label" for="defaultIndeterminate3">Keep me Logged in</label> -->
+                        <!-- </div> -->
+                        <button type="submit" class="btn btn-outline-warning mt-2">Submit</button>
+                    </form>	
+                    
+                    <p class="hr-line-social mt-2">or</p>
+                    
+                    <span class="question" style="color: black;"> Don't have an account?</span>
+                    <a data-toggle="modal" id="modid"
+                        data-dismiss="modal"
+                        data-target="#exampleModal2"> <span id="red">Create your account here</span></a>							
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- bootstrap Modal for forgot password 3 ends here  -->
+
+
+
+
+<!-- Modal 4 for forgot Password -->
+    <!-- password reset -->
+    <div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" style="background-color: rgb(240, 240, 240)">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="font-weight:bold;">RESET PASSWORD </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                </div>
+
+                <div class="modal-body">
+                    <form>
+                        <!-- <div class="form-group">
+                            <label for="recipient-name" class="col-form-label" style="font-weight:bold;">Name *</label>
+                            <input type="text" class="form-control" placeholder="Enter your full name" id="recipient-name">
+                        </div> -->
+                        <div class="form-group">
+                            <!-- <label for="message-text" class="col-form-label" style="font-weight:bold;">Email *</label> -->
+                            <input type="email" class="form-control" placeholder="Email" id="recipient-name">
+                        </div>
+
+                        <!-- <div class="form-group">
+                            <label for="message-text" class="col-form-label" style="font-weight:bold;">Password *</label>
+                            <input type="password" placeholder="Enter Password" class="form-control" id="recipient-name">
+                        </div> -->
+                        <button type="button" class="btn btn-warning">SEND</button>
+                    </form> 
+                </div>
+
+                <div class="modal-footer">
+                    <p>Remember your password?<a href="#exampleModal1" data-toggle="modal" data-target="#exampleModal1" style="color: red;"> Login</a></p>
+                    <!-- <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-warning">SUBMIT</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Password reset 4 ends here  -->
+
+    <!-- Add to cart new bootstrap modal -->
+
+    <!-- Modal -->
+    <div class="modal fade right" id="modalAbandonedCart" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true" data-backdrop="true">
+        <div class="modal-dialog modal-side modal-bottom-right" role="document">
+            <div class="modal-content addtocart_modal">
+                <!-- Modal header -->
+                <div class="modal-header">
+                    <h5 class="modal-title mx-auto">Item added in the cart</h5>
+                    <button type="button" class="close ml-0" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <!-- modal body -->
+                <div class="modal-body">
+                    <div class="row my-3">
+                        <div class="col-3">
+                            <p class="text-center"><i class="fas fa-shopping-cart text-warning fa-2x"></i></p>
+                        </div>
+                        <div class="col-9">
+                            <p>Product has been added in the cart</p>
+                            <!-- <p class="mb-0">No pressure, your product will be waiting for you in the cart.</p> -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- add to cart -->
+                <div class="modal-footer d-flex justify-content-center">
+                    <a href="cart.html">
+                        <button class="btn btn-warning mr-2"
+                            style="background-color: #f3b239; color: white;">
+                            Go to cart
+                        </button>
+                    </a>
+                    <button class="btn btn-outline-warning" data-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal ends here -->
+
+
+    
+<!-- Footer starts here-->
+<div id="footer_js">
+    <!-- The navbar code is inside the footer.js  -->
+</div>
+<!-- Footer ends here -->
+
+
+
+
+
+
+
+
+<!-- script starts from here -->
+<script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=5fa5721d8499cb00120cc705&product=inline-share-buttons" async="async"></script>
+<script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+
+        }
+        
+        $(document).ready(function () {
+            $('[data-toggle=search-form]').click(function () {
+                $('.search-form-wrapper').toggleClass('open');
+                $('.search-form-wrapper .search').focus();
+                $('html').toggleClass('search-form-open');
+            });
+            $('[data-toggle=search-form-close]').click(function () {
+                $('.search-form-wrapper').removeClass('open');
+                $('html').removeClass('search-form-open');
+            });
+            $('.search-form-wrapper .search').keypress(function (event) {
+                if ($(this).val() == "Search ") $(this).val(" ");
+            });
+
+            $('.search-close').click(function (event) {
+                $('.search-form-wrapper').removeClass('open');
+                $('html').removeClass('search-form-open');
+            });
+        });
+
+
+
+
+        var x = document.getElementById("nav-home");
+        var y = document.getElementById("nav-profile");
+        var z = document.getElementById("nav-contact");
+
+
+        function myFunction() {
+          
+            // var x = document.getElementById("myDIV ");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+                y.style.display = "none";
+                z.style.display = "none";
+            }
+        }
+
+        function myFunction1() {
+            // var x = document.getElementById("myDIV1 ");
+            if (y.style.display === "none") {
+                x.style.display = "none";
+                y.style.display = "block";
+                z.style.display = "none";
+            }
+        }
+
+
+        function myFunction2() {
+            // var x = document.getElementById("myDIV2 ");
+            if (z.style.display === "none") {
+                x.style.display = "none";
+                y.style.display = "none";
+                z.style.display = "block";
+            }
+        }
+
+
+        // 
+
+        // $("#star1").on('click', function (event) {
+        //     event.preventDefault();
+        // });
+
+
+
+        // first prouct write a review section ....................
+
+        var write = document.getElementById("display_reviews");
+        write.style.display === "block";
+
+        write.style.display = "none";
+        // Second prouct add a review section  .....................
+
+        // var add_review = document.getElementById("add_a_review ");
+        // write.style.display === "block ";
+
+        function write_review() {
+            if (write.style.display === "none") {
+                write.style.display = "block";
+            } else {
+                write.style.display = "none";
+            }
+        }
+
+
+        // function add_review(){
+        //     if(write.style.display === "none "){
+        //        write.style.display = "block ";
+        //     }
+        // }
+
+        $(document).ready(function () {
+
+            write.style.display === "block";
+
+            x.style.display = "block";
+            y.style.display = "none";
+            z.style.display = "none";
+
+
+            $("a").on('click', function (event) {
+
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({scrollTop: $(hash).offset().top
+                    }, 700, function () {
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
+
+
+        // Material Select Initialization
+        $(document).ready(function () {
+            $('.mdb-select').materialSelect();
+        });
+
+
+        // new star css 
+        //initial setup
+        document.addEventListener('DOMContentLoaded', function () {
+            addListeners();
+            setRating(); //based on value inside the div
+        });
+
+        function addListeners() {
+            var stars = document.querySelectorAll('.star');
+            [].forEach.call(stars, function (star, index) {
+                star.addEventListener('click', (function (idx) {
+                    console.log('adding rating on', index);
+                    document.querySelector('.stars').setAttribute('data-rating', idx + 1);
+                    console.log('Rating is now', idx + 1);
+                    setRating();
+                }).bind(window, index));
+            });
+        }
+
+        function setRating() {
+            var stars = document.querySelectorAll('.star');
+            var rating = parseInt(document.querySelector('.stars').getAttribute('data-rating'));
+            [].forEach.call(stars, function (star, index) {
+                if (rating > index) {
+                    star.classList.add('rated');
+                    console.log('added rated on', index);
+                } else {
+                    star.classList.remove('rated');
+                    console.log('removed rated on', index);
+                }
+            });
+        }
+    </script>
+
+    <!-- Script adding into cart -->
+    <script>
+        let cart_items = document.querySelectorAll(".image-container .text");
+        cart_items.forEach((e) => {
+            e.addEventListener('click', addtoCart);
+        })
+
+        function addtoCart() {
+            let crt = document.getElementById("crt");
+            let conv_crt = parseInt(crt.innerText);
+
+            conv_crt += 1;
+            crt.innerText = conv_crt;
+            // console.log(crt.innerHTML);
+        }
+    </script>
+    <!-- Add to cart script code ends -->
+
+
+    <script>
+        jQuery("#carousel2").owlCarousel({
+            autoplay: true,
+            lazyLoad: true,
+            loop: true,
+            margin: 20,
+            /*
+            animateOut: 'fadeOut',
+            animateIn: 'fadeIn',
+            */
+            responsiveClass: true,
+            autoHeight: true,
+            autoplayTimeout: 7000,
+            smartSpeed: 800,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+
+                600: {
+                    items: 3
+                },
+
+                1024: {
+                    items: 4
+                },
+
+                1366: {
+                    items: 4
+                }
+            }
+        });
+    </script>
+
+<!-- 
+    <script>
+        $(document.onload()).ready(function() {
+        });
+    </script> -->
+    <!-- Instagram script ends -->
+
+
+    <!-- on page load -->
+    <!-- share it link -->
+    <!-- share it link -->
+
+    <!-- <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=5fa5721d8499cb00120cc705&product=inline-share-buttons" async="async"></script> -->
+    <!-- Main javascript link -->
+
+
+    <script type="module" src="js/cart1.js"></script>
+
+    <!-- footer.js starts here -->
+  <script type="module" src="./js/footer.js"></script>
+  <!-- footer.js ends here -->
+</body>
+</html>

@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Style.css is link here -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- Bootstrap Css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+
+    <!-- Bootstrap js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <!-- Social Media Icon -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <!-- Font awesome -->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet" />
+
+
+    <!-- Slider Carousel Css  -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+    <!-- times font style -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet" />
+
+    <!-- ajax scrolling effect -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+
+    <!-- Home Page Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <!-- Tabs  -->
+
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  -->
+    <!-- Social Media Icons -->
+
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans"> -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">  -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Slider Carousel Css  -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+
+
+    <!-- animation link starts of text animation-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- animation link ends of text animation-->
+
+
+    <!-- insta link -->
+    <script type="text/javascript" src="path/to/instafeed.min.js"></script>
+    <!-- insta link ends -->
+
+    <!-- Insta feed link -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+  integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" /> -->
+
+    <title>UltraV</title>
+</head>
+
+<body>
+
+    <!-- <button onclick="topFunction()" id="myBtn" title="Go to top" style="width: 20px;height:20px;"></button> -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="images/toparrow.png" width="15px; height:12px;" style="object-fit: contain;"></button>
+
+    <!--Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark default-color" style="position:sticky !important;">
+
+        <a href="index.html"><img class="logo_dark" href="index.html" src="./images/ultrav_logo.png" alt="UltraV" width="140px" ;/></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./brandstory.html">Brand Story</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./idebenone.html">Idebenone</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./idebenoneAmpoule.html">Idebenone Ampoule</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./shop.html">Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">Contact Us</a>
+                </li>
+            </ul>
+
+
+
+
+
+            <ul class="navbar-nav nav-flex-icons">
+                <!-- search_box -->
+                <li class="nav-item">
+                    <div class="search-box">
+                        <input class="search-txt" type="text" name="" value="" placeholder="Search here..." style="font-weight: 700;" />
+                        <a class="search-btn" href="#">
+                            <i class="fa fa-search" style="color: black;"></i>
+                        </a>
+                    </div>
+                </li>
+
+
+                <!-- <li class="nav-item">
+                    <a class="nav-link waves-effect">
+                        
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="clearfix d-none d-sm-inline-block"> Cart </span>
+                    </a>
+                </li> -->
+                <!-- shopping_cart -->
+                <li class="nav-item">
+                    <a class="nav-link" href="./cart.html"><img src="images/shp_icon.png" style="width: 25px;height: 25px;"></i>
+                        <span class="" style="font-size: 20px;color: white;">1</span>
+                    </a>
+                    <!-- <a class="nav-link"><i class="fas fa-shopping-cart"></i></a> -->
+                </li>
+
+                <!-- user_account -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="images/user_acc_logo.png" style="width: 30px; height: 30px;filter: invert(1);">
+                    </a>
+
+                    <!-- <i class="fas fa-user" style="font-size: 20px;"></i>
+                  <i class="fas fa-user"></i>
+
+                   <!-- Log in and Sign Up button  -->
+                    <div class="dropdown-menu dropdown-menu-right" style="background-color: white;" aria-labelledby="navbarDropdownMenuLink-333">
+                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#exampleModal1" style="color: black !important;font-weight: bold;"><i class="fas fa-sign-in-alt" style="padding-right: 20px;"></i>Log in</a>
+                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#exampleModal2" style="color: black !important;font-weight: bold;"><i class="fas fa-user-plus" style="padding-right: 20px;"></i>Sign Up</a>
+                    </div>
+                </li>
+            </ul>
+
+
+
+            <!-- <ul class="navbar-nav nav-flex-icons">
+              <li class="nav-item"> -->
+
+            <!-- <form class="top_search clearfix small_top_search" method="post" action="">
+                  <div class="search-box">
+                    <input type="text" class="s" placeholder="Search Here ..." name="searchProduct">
+                    <span class="top_search_icon"><i class="fa fa-search"></i></span>
+                    <input type="submit" class="top_search_submit" >
+                  </div>
+                </form>  -->
+
+            <!-- <form class="top_search clearfix small_top_search" method="post" action="https://www.agelessxpress.com/search.php">
+                  <div class="top_search_con">
+                    <input type="text" class="s" placeholder="Search Here ..." name="searchProduct">
+                    <span class="top_search_icon"><i class="ico-search4"></i></span>
+                    <input type="submit" class="top_search_submit" >
+                  </div>
+                </form> -->
+
+            <!-- <div class="search_icon_div">
+                  <input class="search-txt" type="text" name="" value="" placeholder="Search here..." />
+                  <a class="search-btn" href="#">
+                    <i class="fa fa-search" style="color:black;padding-top: 10px;margin-left: 70px;"></i> 
+                  </a>
+                </div> -->
+            <!-- </li> -->
+
+            <!-- <li class="nav-item">
+                <a class="nav-link"><i class="fas fa-shopping-cart"></i></a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-user"></i>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right dropdown-default" aria-labelledby="navbarDropdownMenuLink-333">
+                  <a class="dropdown-item" href="#" data-toggle="modal" data-target="#exampleModal1" style="color: black !important;font-weight: bold;">Log in</a>
+                  <a class="dropdown-item" href="#" data-toggle="modal" data-target="#exampleModal2"  style="color: black !important;font-weight: bold;">Sign Up</a>
+                </div>
+              </li>  -->
+
+            </ul>
+        </div>
+    </nav>
+
+
+    <!--Main layout-->
+    <main class="mt-5 pt-4">
+        <div class="container wow fadeIn">
+
+            <!-- Heading -->
+            <h2 class="my-5 h2 text-center">Checkout form</h2>
+
+            <!--Grid row-->
+            <div class="row">
+
+                <!--Grid column-->
+                <div class="col-md-8 mb-4">
+
+                    <!--Card-->
+                    <div class="card">
+
+                        <!--Card content-->
+                        <form class="card-body">
+
+                            <!--Grid row-->
+                            <div class="row">
+
+                                <!--Grid column-->
+                                <div class="col-md-6 mb-2">
+
+                                    <!--firstName-->
+                                    <div class="md-form ">
+                                        <input type="text" id="firstName" class="form-control">
+                                        <label for="firstName" class="">First name</label>
+                                    </div>
+
+                                </div>
+                                <!--Grid column-->
+
+                                <!--Grid column-->
+                                <div class="col-md-6 mb-2">
+
+                                    <!--lastName-->
+                                    <div class="md-form">
+                                        <input type="text" id="lastName" class="form-control">
+                                        <label for="lastName" class="">Last name</label>
+                                    </div>
+
+                                </div>
+                                <!--Grid column-->
+
+                            </div>
+                            <!--Grid row-->
+
+                            <!--Username-->
+                            <div class="md-form input-group pl-0 mb-5">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">@</span>
+                                </div>
+                                <input type="text" class="form-control py-0" placeholder="Username" aria-describedby="basic-addon1">
+                            </div>
+
+                            <!--email-->
+                            <div class="md-form mb-5">
+                                <input type="text" id="email" class="form-control" placeholder="youremail@example.com">
+                                <label for="email" class="">Email (optional)</label>
+                            </div>
+
+                            <!--address-->
+                            <div class="md-form mb-5">
+                                <input type="text" id="address" class="form-control" placeholder="1234 Main St">
+                                <label for="address" class="">Address</label>
+                            </div>
+
+                            <!--address-2-->
+                            <div class="md-form mb-5">
+                                <input type="text" id="address-2" class="form-control" placeholder="Apartment or suite">
+                                <label for="address-2" class="">Address 2 (optional)</label>
+                            </div>
+
+                            <!--Grid row-->
+                            <div class="row">
+
+                                <!--Grid column-->
+                                <div class="col-lg-4 col-md-12 mb-4">
+
+                                    <label for="country">Country</label>
+                                    <select class="custom-select d-block w-100" id="country" required>
+                    <option value="">Choose...</option>
+                    <option>India</option>
+                  </select>
+                                    <div class="invalid-feedback">
+                                        Please select a valid country.
+                                    </div>
+
+                                </div>
+                                <!--Grid column-->
+
+                                <!--Grid column-->
+                                <div class="col-lg-4 col-md-6 mb-4">
+                                    <label for="state">State</label>
+                                    <select class="custom-select d-block w-100" id="state" required>
+                                        <option value="">Choose...</option>
+                                        <option>Mumbai</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Please provide a valid state.
+                                    </div>
+
+                                </div>
+                                <!--Grid column-->
+
+                                <!--Grid column-->
+                                <div class="col-lg-4 col-md-6 mb-4">
+
+                                    <label for="zip">Zip</label>
+                                    <input type="text" class="form-control" id="zip" placeholder="" required>
+                                    <div class="invalid-feedback">
+                                        Zip code required.
+                                    </div>
+
+                                </div>
+                                <!--Grid column-->
+
+                            </div>
+                            <!--Grid row-->
+
+                            <hr>
+
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="same-address">
+                                <label class="custom-control-label" for="same-address">Shipping address is the same as my billing address</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="save-info">
+                                <label class="custom-control-label" for="save-info">Save this information for next time</label>
+                            </div>
+
+                            <hr>
+
+                            <div class="d-block my-3">
+                                <div class="custom-control custom-radio">
+                                    <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
+                                    <label class="custom-control-label" for="credit">Credit card</label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
+                                    <label class="custom-control-label" for="debit">Debit card</label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
+                                    <label class="custom-control-label" for="paypal">Paypal</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="cc-name">Name on card</label>
+                                    <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                                    <small class="text-muted">Full name as displayed on card</small>
+                                    <div class="invalid-feedback">
+                                        Name on card is required
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="cc-number">Credit card number</label>
+                                    <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                                    <div class="invalid-feedback">
+                                        Credit card number is required
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3 mb-3">
+                                    <label for="cc-expiration">Expiration</label>
+                                    <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                                    <div class="invalid-feedback">
+                                        Expiration date required
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                    <label for="cc-expiration">CVV</label>
+                                    <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                                    <div class="invalid-feedback">
+                                        Security code required
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="mb-4">
+                            <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button>
+
+                        </form>
+
+                    </div>
+                    <!--/.Card-->
+
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-md-4 mb-4">
+
+                    <!-- Heading -->
+                    <h4 class="d-flex justify-content-between align-items-center mb-3">
+                        <span class="text-muted">Your cart</span>
+                        <span class="badge badge-secondary badge-pill">3</span>
+                    </h4>
+
+                    <!-- Cart -->
+                    <ul class="list-group mb-3 z-depth-1">
+                        <li class="list-group-item d-flex justify-content-between lh-condensed">
+                            <div>
+                                <h6 class="my-0">Product name</h6>
+                                <small class="text-muted">Brief description</small>
+                            </div>
+                            <span class="text-muted">$12</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between lh-condensed">
+                            <div>
+                                <h6 class="my-0">Second product</h6>
+                                <small class="text-muted">Brief description</small>
+                            </div>
+                            <span class="text-muted">$8</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between lh-condensed">
+                            <div>
+                                <h6 class="my-0">Third item</h6>
+                                <small class="text-muted">Brief description</small>
+                            </div>
+                            <span class="text-muted">$5</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between bg-light">
+                            <div class="text-success">
+                                <h6 class="my-0">Promo code</h6>
+                                <small>EXAMPLECODE</small>
+                            </div>
+                            <span class="text-success">-$5</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between">
+                            <span>Total (USD)</span>
+                            <strong>$20</strong>
+                        </li>
+                    </ul>
+                    <!-- Cart -->
+
+                    <!-- Promo code -->
+                    <form class="card p-2">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Promo code" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-secondary btn-md waves-effect m-0" type="button">Redeem</button>
+                            </div>
+                        </div>
+                    </form>
+                    <!-- Promo code -->
+
+                </div>
+                <!--Grid column-->
+
+            </div>
+            <!--Grid row-->
+
+        </div>
+    </main>
+    <!--Main layout-->
+
+
+    <!-- footer starts here -->
+    <footer class="container-fluid">
+        <div class="footer_style">
+            <div class="about">
+                <!-- <a href="index.html" target="_blank"><img src="./images/ultrav_logo.png" class="" width="60%" height="40%"></a> -->
+                <a href="index.html" target="_blank"><img src="./images/ultrav_logo.png" style="height:70px;width:150px;margin-left: -15px;" /></a>
+
+                <h3 style="font-weight: 600">About Us</h3>
+                <p style="text-align: left;line-height: 35px;">
+                    UltraV Cosmetics is cosmeceutical<br/> brand that manufactures highly<br/> functional cosmetics based on<br/> patented technology and many<br/> years of clinical experience.
+                </p>
+            </div>
+
+
+
+            <!-- Grid starts here for instagram-->
+
+            <!-- <div class="col-md-4">
+              <div class="footer_row">
+                <h6 class="footer_title">Instagram</h6>
+                <ul class="recent_posts_list">
+                  <li class="clearfix">
+                    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/B-jkPopnFzJ/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="12" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/B-jkPopnFzJ/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;"> View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/B-jkPopnFzJ/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by The Ageless Clinic (@theagelessclinic)</a> on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2020-04-04T10:32:48+00:00">Apr 4, 2020 at 3:32am PDT</time></p></div></blockquote><script async src="//www.instagram.com/embed.js"></script>
+                  </li>
+                </ul>
+              </div>
+            </div> -->
+
+            <!-- Grid ends here for instagram-->
+
+
+            <!-- Support -->
+            <div class="support">
+                <h3 style="font-weight: 600">SUPPORT</h3>
+                <ul class="list-unstyled" style="line-height:35px;">
+                    <li><a class="" href="#">Terms of Use</a></li>
+                    <li><a class="" href="#">Privacy Policy</a></li>
+                    <li><a class="" href="#">Refund Policy</a></li>
+                    <li><a class="" href="#">Shipping Policy</a></li>
+                    <li><a class="" href="contact.html">Contact Us</a></li>
+                    <hr class="vl">
+                </ul>
+                <!-- <hr class="vl2"> -->
+            </div>
+
+            <!-- Newsletter -->
+            <div class="newsletter">
+                <h3 style="font-weight: 600">NEWSLETTER</h3>
+                <form class="form-inline">
+                    <input class="" style="padding: 7px 10px;max-width:80%;border-radius: 1px;" type="text" placeholder="Email Address" aria-label="Search" />
+                    <a href="contact.html"><button class="sign_up">OK</button></a>
+                </form>
+
+                <p style="font-size:1.1em; margin-top: 50px;font-weight: 600;letter-spacing: 2px;">FOLLOW US</p>
+                <!-- <a href=""><i class="fab fa-facebook-f" style="font-size: 23px; color:white"></i></a> -->
+
+                <a href="" style="color: white"><img src="images/fblogo.png" style="width: 27px; height:27px;filter: invert(1);margin: 5px;" /></a>
+                <a href="" style="color: white"><img src="images/twitter.png" style="width: 23px; height:23px;filter: invert(1);margin: 5px;" /></a>
+                <a href="" style="color: white"><img src="images/whatsapp_logo.png" style="width: 23px; height:23px;filter: invert(1);margin: 5px;" /></a>
+                <a href="" style="color: white"><img src="images/instagram_logo.png" style="width: 23px; height:23px;filter: invert(1);margin: 5px;" /></a>
+
+                <!-- <a href=""><i class="fab fa-whatsapp" style="font-size: 23px; color: white"></i></a>
+              <a href=""><i class="fab fa-instagram" style="font-size: 23px; color: white"></i></a> -->
+                <hr class="vl2">
+            </div>
+        </div>
+        <p class="" style="text-align: center;color: white ;font-size:13px;">© Copyright 2020 | All Rights Reserved.</p>
+    </footer>
+    <!-- Footer ends here -->
+
+
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            if (
+                document.body.scrollTop > 100 || document.documentElement.scrollTop > 100
+            ) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+</body>
+
+</html>
