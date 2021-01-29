@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <?php
+include 'include/dbconn.php';
+include 'users/include/session.php';
+$sess=session_id();
+?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>checkout</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Css -->
+
+        <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+            crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet">
+
+        <!-- jquery -->
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"></script>
+
+        <!-- Modal Popup Css here -->
+
+		<script src="js/jquery.min.js"></script>
+		<!-- jQuery Form Validation library -->
+		<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
+        <link rel="stylesheet" href="cards.css" />
+        <link rel="stylesheet" href="cardsmodal.css" />
+
+
+        <style>
+			*{
+                    box-sizing: border-box;
+                }
+
+                body{
+                    background-color:whitesmoke;
+                    font-size: 14px;
+                    font-family: "Open Sans", sans-serif;
+                }
+        </style>
+		<script>
+			window.onload = function() {
+				var d = new Date().getTime();
+				document.getElementById("tid").value = d;
+			};
+		</script>
+        <script>
+                $(document).ready(function(){
+                   $("#myModal").modal('show');
+                   document.getElementById('pop').style.display ='none';
+               });
+
+            //    function hide(){
+            //         document.getElementById('pop').style.display ='none';
+            //     }
+            //     function show(){
+            //         document.getElementById('pop').style.display = 'block';
+            //     }
+
+		</script>
+    </head>
+
+    <!-- body -->
+
+    <body>							
+
+                <!-- 1.Order Summary -->
+                <div class="list">
+                    <h4>Order Summary</h4>
+                    <table style="width:100%">
+                        <tr>
+                            <td>Subtotal</td>
+                            <td>3800</td>
+                            <!-- <td class="right"><?php echo "₹ ".$sum;?></td> -->
+                        </tr>
+                        <tr>
+                            <td>Shipping - Charges</td>
+                            <td class="right">
+                                <p>3800</p>
+                               
+							</td>
+                        </tr>
+                        <tr>
+                            <td>Grand Total :</td>
+                            <p>4000</p>
+                        </tr>
+
+                    </table>
+					<br>
+	         </div>
+
+            <!-- Middle Section -->
+            <!-- 2nd Div -->
+		    <div class="w3-panel w3-card-2"><p id="para"> 2.DIV</p>
+                <div class="primary">
+                    <button type="button" class="btn btn-danger pink" data-toggle="modal" data-target="#myModal"> Log in or Create Account</button>
+                </div>
+
+                <div class="">
+                </div>
+
+            </div>
+
+           
+            <!-- 3rd Section Det-->
+            <div class="w3-panel w3-card-4">
+                <p id="para">3.PAYMENT</p>
+                    <div class="custom-control custom-radio rad-border">
+                        <input type="radio" onclick="show();" class="custom-control-input" id="defaultUnchecked" name="defaultExampleRadios" checked>
+                        <label class="custom-control-label" for="defaultUnchecked">CCavenue</label>
+                    </div>
+				<div class="secondary">
+                    <button type="submit" class="btn btn-secondary sec" name="submit" disabled>PAY NOW</button>
+					</div>
+				<div class="secondary">
+                    <button type="submit" class="btn btn-secondary sec" name="submit">PAY NOW</button>
+                </div>
+                    
+                <div class="payment">
+                    <h6 style="font-size: 13px; text-align: center;">Credit or Debit Cards | UPI | Net Banking | Prepaid Wallets</h6>
+                    <img src="https://www.agelessxpress.com/images/pay.jpg" class="checkout-paymentlogos" alt=""><br>
+					<br>	
+					<br>
+                </div>
+            </div>
+        </div>
+</form>	
+
+
+
+        <!-- Modal 1 st popup -->
+        <!-- Modal -->
+        <!-- First Modal here -->
+
+
+			
+        <div class="modal fade bd-example-modal-lg" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+
+                    <!-- Modal Content -->
+
+                    <div class="modal-header" tabindex="-1">
+
+                        <div class="login">
+                            <h3>Log in <span> or </span> Create Account</h3>
+                        </div>
+
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                           
+						<div class="createacc">
+							<p>LOG IN WITH OTP</p>
+							<form action="PHPmailer/otpMail.php" method="post">
+								<input type="hidden" name="checkOutLogin" value="YES">
+								<div class="inputnum">
+									<input type="email" id="otpEmail" class="input-text"  name="otpEmail" title="Enter Email" placeholder="Enter your registered email address"	aria-required="true" />
+								</div>
+								<button class="otp" type="submit">GET OTP</button>
+							</form> 
+						
+							<p>LOG IN WITH PASSWORD</p>
+							<form method="post" action="https://www.agelessxpress.com/loginChk.php">
+								<input type="hidden" name="checkOutLogin" value="YES">
+								<input name="login_user_email" id="login_user_email"
+									type="text" class="email-text"
+									title="Email address"
+									placeholder="Enter your registered email address" aria-required="true">
+
+								<div class="pswd">
+									<input name="login_password" type="password" autocomplete="off" class="password-text"
+										id="login_password" title="Password" placeholder="  Enter password" aria-required="true" />
+									<a data-toggle="modal" data-dismiss="modal" data-target="#myModal2"><span id="red">Forgot?</span></a>
+							   </div>
+
+								<div class="custom-control custom-checkbox check-left">
+									<input type="checkbox" class="custom-control-input"id="defaultIndeterminate3" checked>
+									<label class="custom-control-label" for="defaultIndeterminate3">Keep me Logged in</label>
+								</div>
+
+								<button type="submit" class="btn btn-primary sub1">Submit</button>
+							</form>	
+							
+							<p class="hr-line-social">or</p>
+							
+							<span class="question"> Don't have an account?</span>
+							<a data-toggle="modal" id="modid"
+								data-dismiss="modal"
+								data-target="#myModal1"> <span id="red">Create your account here</span></a>
+
+							
+						</div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+
+        <!-- Register user Modal here.. -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal1">
+            <div class="modal-dialog">
+
+                <!-- Modal  content-->
+                <div class="modal-content create-account" tabindex="-1">
+                    <div class="modal-header" style="width:100%;">
+                        <button type="button" class="close"
+                            data-dismiss="modal">&times;</button>
+                    </div>
+					<div class="modal-body register-user">
+						<h3 class="login-otp-title"> Your Contact Information</h3>
+                        <form action="checkoutReg.php" method="POST">
+                            <div class="control">
+                                <input name="firstName" id="regemail-firstname"
+                                    type="text" class="input-text" title="First Name"
+                                    placeholder="First name"
+                                    aria-required="true"
+                                    required>
+                            </div>
+
+                            <div class="control">
+                                <input name="lastName" id="regemail-lastname"
+                                    type="text" class="input-text" title="LastName"
+                                    placeholder="Last name"
+                                    aria-required="true">
+                            </div>
+
+                            <div class="control">
+
+                                <input name="custPhone" id="regemail-mobile"
+                                    type="tel" class="input-text" title="Mobile"
+                                    placeholder="Mobile number"
+                                    aria-required="true" autocomplete="off">
+                            </div>
+
+                            <div class="control">
+                                <input name="custEmail" id="regemail-email"
+                                    type="text" class="input-text" title="Email"
+                                    placeholder="Email address"
+                                    aria-required="true">
+                            </div>
+
+                            <div class="control">
+                                <input name="password" type="password"
+                                    autocomplete="off" class="input-text"
+                                    id="regemail-password" title="Password"
+                                    placeholder="Password"
+                                    aria-required="true">
+                            </div>
+
+
+                            <div class="primary">
+                                <button type="submit" class="submit"> <span>Create Account</span></button>
+                            </div>
+                            <span class="already-have-account">Already have an
+                                account?</span><br>
+                            <a data-toggle="modal" data-dismiss="modal"
+                                data-target="#myModal"><span id="red"> LOG IN</span></a>
+                        </div>
+
+                    </form>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default"
+                            data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+		<!-- Register modal class End -->
+
+        <!-- Forgot modal class -->
+
+        <div class="modal fade" id="myModal2">
+            <div class="modal-dialog">
+                <div class="modal-content create-account" tabindex="-1">
+                    <div class="modal-header" style="width:100%;">
+
+                        <div class="login">
+                            <h3>Reset Password</h3>
+                        </div>
+
+                        <button type="button" class="close" data-dismiss="modal"
+                            aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <form>
+
+                            <div class="createacc">
+                                <input name="emailmobile" id="emailmobilenumber"
+                                    type="text" class="email-text"
+                                    title="Email Address"
+                                    placeholder="Email address"
+                                    aria-required="true">
+                                <button class="otp" type="submit">SEND</button>
+                                <P>Remember your Password</P>
+                                <a data-toggle="modal" data-dismiss="modal"
+                                    data-target="#myModal"><span id="red"> LOG
+                                        IN</span></a>
+                            </div>
+                        </form>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default"
+                                data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<!-- Forgot modal class Ends here  -->	
+    </body>
+</html>

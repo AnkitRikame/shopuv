@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+    <title>Document</title>
+    <style>
+        /**
+ * For displaying a image grid of news articles
+ */
+        /*--------------------------------------------------------------
+# Parent Grid
+--------------------------------------------------------------*/
+        
+        .news-grid {
+            z-index: 1;
+            transition: .5s;
+        }
+        
+        @supports (display: flex) {
+            @media (min-width: 767px) {
+                .news-grid {
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -ms-flex-wrap: wrap;
+                    flex-wrap: wrap;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    justify-content: center;
+                }
+            }
+        }
+        /*--------------------------------------------------------------
+# Link Containers
+--------------------------------------------------------------*/
+        
+        .news-grid .block-link {
+            display: block;
+            position: relative;
+            overflow: hidden;
+            margin: .5em 0;
+        }
+        
+        .news-grid .block-link.darken {
+            background: #000;
+        }
+        
+        .news-grid .block-link.contain {
+            min-height: 235px;
+        }
+        
+        @media (min-width: 767px) {
+            .news-grid .block-link {
+                margin: 1em 0;
+            }
+            .news-grid .block-link.contain {
+                min-height: 378px;
+            }
+            @supports (object-fit: cover) {
+                .news-grid .block-link img {
+                    object-fit: cover;
+                }
+                .news-grid .block-link.contain img {
+                    min-height: 378px;
+                }
+            }
+        }
+        
+        @media (min-width: 1200px) {
+            .news-grid .block-link.contain {
+                min-height: 285px;
+            }
+            @supports (object-fit: cover) {
+                .news-grid .block-link.contain img {
+                    object-fit: cover;
+                }
+                .news-grid .block-link.contain img {
+                    min-height: 285px;
+                }
+            }
+        }
+        /*--------------------------------------------------------------
+# # Link Containers --> Images
+--------------------------------------------------------------*/
+        
+        .news-grid .block-link img {
+            transition: .3s;
+            width: 100%;
+            height: auto;
+        }
+        
+        .news-grid .block-link:hover img,
+        .news-grid .block-link:focus img {
+            transform: scale(1.1);
+        }
+        
+        .news-grid .block-link.darken img {
+            opacity: .5;
+        }
+        
+        @supports (filter: brightness(50%)) {
+            .news-grid .block-link.darken img {
+                opacity: 1;
+                filter: brightness(50%);
+            }
+        }
+        /*--------------------------------------------------------------
+# # Link Containers --> Headings
+--------------------------------------------------------------*/
+        
+        .news-grid .block-link.contain.darken .heading-4 {
+            position: absolute;
+            bottom: 0;
+            color: #fff;
+            padding: 10px;
+        }
+        
+        @media (min-width: 767px) {
+            .news-grid .block-link.contain .heading-4 {
+                padding: 1em;
+            }
+        }
+        /* Make them tall enough that they all clear and there's no
+ * floating below issues */
+        
+        @media (min-width: 768px) {
+            .news-grid .heading-6 {
+                min-height: 5em;
+            }
+        }
+        /* Not an issue in flexbox */
+        
+        @supports (display: flex) {
+            .news-grid .heading-6 {
+                min-height: 0;
+            }
+        }
+        
+        .news-grid hr {
+            border-top: 1px solid rgba(0, 0, 0, 0.25);
+        }
+        /* No margins for the MDL card images */
+        
+        .block-link.mdl-card__media {
+            margin: 0;
+        }
+        
+        .slick-next:before,
+        .slick-prev:before {
+            color: #797979;
+            font-family: FontAwesome;
+            font-size: 40px;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        @media (min-width: 1300px) {
+            .slick-next {
+                right: -50px;
+            }
+            .slick-prev {
+                left: -50px;
+            }
+        }
+        
+        .slick-prev:before {
+            content: "\f053";
+        }
+        
+        .slick-next:before {
+            content: "\f054";
+        }
+        
+        .loader {
+            position: absolute;
+            z-index: 999;
+            height: 80%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            opacity: 1;
+        }
+        
+        .loader+#mdl {
+            opacity: .5;
+        }
+        
+        .mdl-card .button {
+            border: 1px solid #cdcdcd;
+        }
+        /**
+ * Copyright 2015 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+        /**
+ * @package Material Design Lite (mdl)
+ * @author Google Inc.
+ * @link https://getmdl.io/components/index.html#cards-section
+ */
+        /**
+ * Modified for BATheme2017
+ */
+        
+        .mdl-card {
+            display: flex;
+            flex-direction: column;
+            /*font-size: 16px;*/
+            font-weight: 400;
+            min-height: 200px;
+            overflow: hidden;
+            /*width: 330px;*/
+            z-index: 1;
+            position: relative;
+            background: rgb(255, 255, 255);
+            border-radius: 2px;
+            box-sizing: border-box;
+            margin-bottom: 1em;
+            padding: 0;
+        }
+        
+        .mdl--shadow {
+            -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+        }
+        
+        .mdl--border {
+            border: 1px solid rgba(0, 0, 0, 0.25);
+        }
+        
+        .mdl-card__media {
+            background-color: rgb(33, 44, 33);
+            background-repeat: repeat;
+            background-position: 50% 50%;
+            background-size: cover;
+            background-origin: padding-box;
+            background-attachment: scroll;
+            box-sizing: border-box;
+        }
+        
+        .mdl-card__media img {
+            width: 100%;
+            height: auto;
+        }
+        
+        .mdl-card__title {
+            align-items: center;
+            color: rgb(0, 0, 0);
+            display: block;
+            display: flex;
+            line-height: normal;
+            padding: 16px 16px;
+            perspective-origin: 165px 56px;
+            transform-origin: 165px 56px;
+            box-sizing: border-box;
+        }
+        
+        .mdl-card__title.mdl-card--border {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+        
+        .mdl-card__title-text {
+            align-self: flex-end;
+            color: inherit;
+            display: block;
+            display: flex;
+            /*font-size: 24px;*/
+            /*font-weight: 300;*/
+            line-height: normal;
+            overflow: hidden;
+            transform-origin: 149px 48px;
+            margin: 0;
+        }
+        
+        .mdl-card__subtitle-text {
+            /*font-size: 14px;*/
+            color: rgba(0, 0, 0, 0.54);
+            margin: 0;
+        }
+        
+        .mdl-card__supporting-text {
+            color: rgba(0, 0, 0, 0.54);
+            /*font-size: 1rem;
+  line-height: 18px;*/
+            overflow: hidden;
+            padding: 16px 16px;
+            width: 90%;
+        }
+        
+        .mdl-card__supporting-text.mdl-card--border {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+        
+        .mdl-card__actions {
+            /*font-size: 16px;*/
+            line-height: normal;
+            width: 100%;
+            background-color: transparent;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        
+        .mdl-card__actions.mdl-card--border {
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+        }
+        
+        .mdl-card--expand {
+            flex-grow: 1;
+        }
+        
+        .mdl-card__menu {
+            position: absolute;
+            right: 16px;
+            top: 16px;
+        }
+        /*--------------------------------------------------------------
+# BA Custom | Horizontal Cards
+--------------------------------------------------------------*/
+        
+        @media (min-width: 767px) {
+            .block-link.mdl-card__media {
+                display: flex!important;
+                background: #efefef;
+                align-items: center;
+            }
+            .mdl-card--horizontal {
+                flex-direction: row;
+            }
+            /*.news-item:nth-of-type(even) .mdl-card--horizontal{
+    flex-direction: row-reverse;
+  }*/
+            .block-link.mdl-card__media {
+                margin: 0;
+                flex: 1 1 auto;
+                min-width: 50%;
+            }
+        }
+        
+        .button--wide {
+            padding: .75em 3em;
+        }
+        
+        .button {
+            border: 2px solid;
+            background: transparent;
+            line-height: 1;
+            padding: .5em 1em;
+            display: inline-block;
+            color: inherit;
+            transition: .3s;
+            position: relative;
+            text-align: center;
+            text-decoration: none;
+            z-index: 2;
+        }
+        
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="container-fluid pod">
+        <div class="row triangle-deco">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 center-block">
+                        <div class="container--section-label">
+                            <h4 class="section-label section-label--widget">
+                                Quotes
+                            </h4>
+                        </div>
+                        <div id="mdl" class="news-grid row">
+                            <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+                  # Quote #1
+                  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+                            <div class="col-md-4 col-sm-6">
+                                <div class="mdl-card mdl--border full-bleed">
+                                    <a class="block-link mdl-card__media" href="#">
+                                        <img width="375" height="210" src="https://via.placeholder.com/375x210" />
+                                    </a>
+                                    <div class="mdl-card__title">
+                                        <h2 class="mdl-card__title-text heading-6 font--light">
+                                            Quote Author #1
+                                        </h2>
+                                    </div>
+                                    <div class="mdl-card__supporting-text sans-serif">
+                                        this is some quote text <br /> And another line is here
+                                    </div>
+                                    <div class="mdl-card__actions center">
+                                        <a class="button button--wide" href="#">
+                          Read More
+                        </a>
+                                    </div>
+                                    <!-- /. mdl-card__actions center -->
+                                </div>
+                                <!-- /.mdl-card -->
+                            </div>
+                            <!-- /.col-md-4 col-sm-6 -->
+                            <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+                  # Quote #2
+                  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+                            <div class="col-md-4 col-sm-6">
+                                <div class="mdl-card mdl--border full-bleed">
+                                    <a class="block-link mdl-card__media" href="#">
+                                        <img width="375" height="210" src="https://via.placeholder.com/375x210" />
+                                    </a>
+                                    <div class="mdl-card__title">
+                                        <h2 class="mdl-card__title-text heading-6 font--light">
+                                            Quote Author #2
+                                        </h2>
+                                    </div>
+                                    <div class="mdl-card__supporting-text sans-serif">
+                                        this is some quote text <br /> And another line is here
+                                    </div>
+                                    <div class="mdl-card__actions center">
+                                        <a class="button button--wide" href="#">
+                          Read More
+                        </a>
+                                    </div>
+                                    <!-- /. mdl-card__actions center -->
+                                </div>
+                                <!-- /.mdl-card -->
+                            </div>
+                            <!-- /.col-md-4 col-sm-6 -->
+                            <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+                  # Quote #3
+                  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+                            <div class="col-md-4 col-sm-6">
+                                <div class="mdl-card mdl--border full-bleed">
+                                    <a class="block-link mdl-card__media" href="#">
+                                        <img width="375" height="210" src="https://via.placeholder.com/375x210" />
+                                    </a>
+                                    <div class="mdl-card__title">
+                                        <h2 class="mdl-card__title-text heading-6 font--light">
+                                            Quote Author #3
+                                        </h2>
+                                    </div>
+                                    <div class="mdl-card__supporting-text sans-serif">
+                                        this is some quote text <br /> And another line is here
+                                    </div>
+                                    <div class="mdl-card__actions center">
+                                        <a class="button button--wide" href="#">
+                          Read More
+                        </a>
+                                    </div>
+                                    <!-- /. mdl-card__actions center -->
+                                </div>
+                                <!-- /.mdl-card -->
+                            </div>
+                            <!-- /.col-md-4 col-sm-6 -->
+                            <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+                  # Quote #4
+                  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+                            <div class="col-md-4 col-sm-6">
+                                <div class="mdl-card mdl--border full-bleed">
+                                    <a class="block-link mdl-card__media" href="#">
+                                        <img width="375" height="210" src="https://via.placeholder.com/375x210" />
+                                    </a>
+                                    <div class="mdl-card__title">
+                                        <h2 class="mdl-card__title-text heading-6 font--light">
+                                            Quote Author #4
+                                        </h2>
+                                    </div>
+                                    <div class="mdl-card__supporting-text sans-serif">
+                                        this is some quote text <br /> And another line is here
+                                    </div>
+                                    <div class="mdl-card__actions center">
+                                        <a class="button button--wide" href="#">
+                          Read More
+                        </a>
+                                    </div>
+                                    <!-- /. mdl-card__actions center -->
+                                </div>
+                                <!-- /.mdl-card -->
+                            </div>
+                            <!-- /.col-md-4 col-sm-6 -->
+                            <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+                  # Quote #5
+                  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+                            <div class="col-md-4 col-sm-6">
+                                <div class="mdl-card mdl--border full-bleed">
+                                    <a class="block-link mdl-card__media" href="#">
+                                        <img width="375" height="210" src="https://via.placeholder.com/375x210" />
+                                    </a>
+                                    <div class="mdl-card__title">
+                                        <h2 class="mdl-card__title-text heading-6 font--light">
+                                            Quote Author #5
+                                        </h2>
+                                    </div>
+                                    <div class="mdl-card__supporting-text sans-serif">
+                                        this is some quote text <br /> And another line is here
+                                    </div>
+                                    <div class="mdl-card__actions center">
+                                        <a class="button button--wide" href="#">
+                          Read More
+                        </a>
+                                    </div>
+                                    <!-- /. mdl-card__actions center -->
+                                </div>
+                                <!-- /.mdl-card -->
+                            </div>
+                            <!-- /.col-md-4 col-sm-6 -->
+                            <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+                  # Quote #6
+                  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+                            <div class="col-md-4 col-sm-6">
+                                <div class="mdl-card mdl--border full-bleed">
+                                    <a class="block-link mdl-card__media" href="#">
+                                        <img width="375" height="210" src="https://via.placeholder.com/375x210" />
+                                    </a>
+                                    <div class="mdl-card__title">
+                                        <h2 class="mdl-card__title-text heading-6 font--light">
+                                            Quote Author #6
+                                        </h2>
+                                    </div>
+                                    <div class="mdl-card__supporting-text sans-serif">
+                                        this is some quote text <br /> And another line is here
+                                    </div>
+                                    <div class="mdl-card__actions center">
+                                        <a class="button button--wide" href="#">
+                          Read More
+                        </a>
+                                    </div>
+                                    <!-- /. mdl-card__actions center -->
+                                </div>
+                                <!-- /.mdl-card -->
+                            </div>
+                            <!-- /.col-md-4 col-sm-6 -->
+
+
+                        </div>
+                        <!--/.news-grid.row -->
+                        <div id="more-content" class="row center">
+                            <a href="/news" target="_blank" class="button button--big button--wide">
+                    More Articles
+                  </a>
+                        </div>
+                    </div>
+                    <!-- /.col-md-12     -->
+                </div>
+                <!--/.row -->
+            </div>
+            <!--/.container -->
+        </div>
+        <!--/.row -->
+    </section>
+    <!--/.container-fluid ("In the News" section) -->
+
+    <script>
+        /**
+         * 
+         */
+
+
+        // ROOTURL is (normally) brought in from wp_localize_script
+        var RESTROOT = "https://quotesondesign.com/wp-json";
+        var RESTROUTE = RESTROOT + "/posts?filter[posts_per_page]=3";
+
+        var page = 2;
+        var hitEnd = false;
+        var myCurrentSlide = 6; // Arbitrary
+
+        var moreButton = ''; // Holds HTML for a button to load more on click.
+        moreButton += '<button id="load_featured" class="button button--big button--wide">';
+        moreButton += '  More Articles';
+        moreButton += '</button>';
+
+        var loader = ''; // HTML for spinning loader
+        loader += '<div class="loader">';
+        loader += '  <br /><i class="fa fa-refresh fa-spin fa-3x fa-fw"></i>';
+        loader += '  <span class="sr-only">Loading...</span>';
+        loader += '</div>';
+
+
+
+        jQuery(document).ready(function($) { // jQuery noconflict
+
+            function createFeaturedList(object) {
+                //console.info(object);
+                if (hitEnd) {
+                    return;
+                }
+                if (!object || object == null) {
+                    $(".loader").remove(); // Remove loader
+                    $("#more-content").prepend("<p class='center'>End of results.</p>");
+
+                    hitEnd = true;
+                    return;
+                }
+
+                for (var i = 0; i < object.length; i++) {
+                    var article =
+                        '<article class="col-md-4 col-sm-6">' +
+                        '<div class="mdl-card mdl--border full-bleed">' +
+                        '<a class="block-link mdl-card__media" href="' + object[i].link + '">' +
+                        '<img width="375" height="210" src="https://via.placeholder.com/375x210" />' +
+                        "</a>" +
+                        '<div class="mdl-card__title">' +
+                        '<h2 class="mdl-card__title-text heading-6 font--light">' +
+                        object[i].title +
+                        '</h2>' +
+                        '</div>' +
+                        '<div class="mdl-card__supporting-text sans-serif">' +
+                        object[i].content +
+                        '</div>' +
+                        '<div class="mdl-card__actions center">' +
+                        '<a class="button button--wide" style="border: 1px solid #cdcdcd;"' +
+                        'href="' + object[i].link + '">' +
+                        'Read More' +
+                        '</a>' +
+                        '</div>' +
+                        '</div>' +
+                        '</article>';
+                    $('#mdl').slick('slickAdd', article);
+
+                    // $('#mdl.news-grid').append(article);
+                }
+                $(".loader").remove(); // Remove loader
+                setTimeout(function() {
+                    $('#mdl').slick('slickGoTo', myCurrentSlide + perSlide);
+                    console.log(myCurrentSlide + ' ' + perSlide);
+                }, 500);
+                //$('#mdl').slick('slickNext');
+                //  $("#more-content").append(moreButton); // Reconstruct "Load More" button
+                //  // Have to add click handler again on reconstructed element
+                //  $("#load_featured").click(function(){
+                //    getFeatured();
+                //  });
+            }
+
+            function getFeatured() {
+                if (hitEnd) {
+                    return;
+                }
+
+                // Show a loader
+                $("#mdl").before(loader);
+                // Remove "More Articles" button
+                //$("#load_featured").remove();
+                // Get JSON via AJAX
+                $.ajax(RESTROUTE + '&page=' + page)
+                    .done(function(object) {
+                        createFeaturedList(object);
+                    });
+                page++;
+            }
+
+            $("#load_featured").click(function() {
+                getFeatured();
+            });
+
+            if (!$('#mdl').hasClass('slick-initialized')) {
+                $('#mdl').slick({
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: false,
+                    arrows: true,
+                    responsive: [{
+                        breakpoint: 992,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                            infinite: false,
+                            arrows: true,
+                        }
+                    }, {
+                        breakpoint: 767,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            infinite: false,
+                            arrows: false,
+                        }
+                    }]
+                });
+            }
+            var perSlide = 3;
+            var onlast = false;
+
+            $('#mdl').on('afterChange', function(event, slick, currentSlide) {
+                console.log(slick, currentSlide);
+
+                if (slick.activeBreakpoint == 992) {
+                    perSlide = 2;
+                } else if (slick.activeBreakpoint == 767) {
+                    perSlide = 1;
+                } else {
+                    perSlide = 3;
+                }
+                if (slick.slideCount <= currentSlide + perSlide) {
+                    console.log("Last slide");
+                    myCurrentSlide = currentSlide;
+
+                    if (onlast) {
+
+                        getFeatured();
+                        //$('#mdl').slick('slickGoTo', 1);
+                    }
+                    onlast = !onlast;
+                }
+            });
+
+
+
+        }); // End jQuery noconflict wrapper
+    </script>
+</body>
+
+</html>

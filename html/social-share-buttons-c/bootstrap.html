@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+</head>
+<body>
+
+  <!-- bootstrap modal starts here for Log in-->
+  <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content" style="background-color: rgb(240,240,240);">
+        <div class="modal-header">
+          <!-- <h3>LOGIN</h3> -->
+          <h5 class="modal-title" id="exampleModalLabel" style="font-weight: bold;">LOGIN</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="recipient-name" class="col-form-label" style="font-weight:bold;" >Username or Email Address *</label>
+              <input type="text" class="form-control" placeholder="Enter your Name or Email Id" id="recipient-name">
+            </div>
+
+            <div class="form-group">
+              <label for="recipient-name" class="col-form-label" style="font-weight:bold;" >Password *</label>
+              <input type="password" class="form-control" placeholder="Enter your Last Password ....." id="recipient-name">
+            </div>
+
+            <button type="button" class="btn btn-warning" style="font-weight:bold;">SIGN IN </button>
+
+            <!-- <div class="form-group">
+              <label for="message-text" class="col-form-label">Message:</label>
+              <textarea class="form-control" id="message-text"></textarea>
+            </div> -->
+          </form>
+        </div>
+        <div class="modal-footer">
+          <!-- <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-warning">SUBMIT</button> -->
+          <a href="" style="color: red; font-weight: bold;">Forgot Password?</a> 
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- bootstrap Modal for Log in ends here  -->
+
+
+ <!-- bootstrap 2 modal starts here for Sign Up-->
+ <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" style="background-color: rgb(240, 240, 240)">
+
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel" style="font-weight:bold;">REGISTERED </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label" style="font-weight:bold;" >Name *</label>
+            <input type="text" class="form-control"  placeholder="Enter your full name" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label" style="font-weight:bold;" >Email *</label>
+            <input type="email" class="form-control"  placeholder="abc@gmail.com" id="recipient-name">
+          </div>
+
+          <div class="form-group">
+            <label for="message-text" class="col-form-label" style="font-weight:bold;" >Password *</label>
+            <input type="password" placeholder="Enter Password" class="form-control" id="recipient-name">
+          </div>
+          <button type="button" class="btn btn-warning">SIGN UP</button>
+        </form>
+      </div>
+
+      <div class="modal-footer">
+        <!-- <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-warning">SUBMIT</button> -->
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- bootstrap Modal Sign Up 2 ends here  -->
+
+
+
+
+
+    
+</body>
+</html>

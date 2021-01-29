@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap Css -->
+    <!-- Style.css is link here -->
+
+
+    <!-- Style.css ends here -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/cartlist.css" />
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /> -->
+    <!-- Bootstrap Css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+
+    <!-- Bootstrap js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"></script>
+      
+    <!-- Social Media Icon kit icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>Your Shopping Cart</title>
+  </head>
+
+
+  <style>
+    .cart_bcr a {
+      font-weight: normal;
+    }
+    .coupon button:hover{
+      background-color: #ebc66f !important;
+    }
+  </style>
+
+
+  <body>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="images/toparrow.png"
+        width="15px; height:12px;" style="object-fit: contain;"></button>
+
+    <!--Navbar starts here-->
+    <div id="navbar_js">
+      <!-- The navbar code is inside the header.js  -->
+    </div>
+    <!-- Navbar ends here -->
+
+
+
+
+    <!-- breadbrumbs starts here -->
+    <section class="content_section">
+      <div class="row">
+        <div class="col-md-12 col-xs-12">
+          <div class="main_title">
+            <div class="breadcrumbs cart_bcr">
+              <!-- <a href="index.html">Home &gt;</a> -->
+              <!-- <a href="shop.html">Shop &gt;</a> -->
+              <a href="cart.html"><span>Cart &gt;</span></a>
+              <a href="checkout.html">Information &gt;</a>
+              <a href="shipping.html">Shipping &gt;</a>
+              <a href="payment.html">Payment</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- breadcrumbs ends here -->
+
+
+    <!--Section: Block Content-->
+    <section>
+      <!--Grid row-->
+      <div class="cartmaindiv">
+        <h2 style="text-align: center; margin-top:3%;font-style: Open Sans, sans-serif;">Your Cart Details</h2>
+      </div>
+      <div class="row mt-4" style="max-width: 90vw; margin: auto; margin-bottom: 4%; padding-bottom:20px;border: 1px solid black;">
+        <!--Grid column-->
+
+        <!-- Main content in the middle  -->
+        <div class="col-lg-12 col-md-12">
+          <!-- Card -->
+          <div class="mb-3">
+            <div class="pt-4 wish-list">
+              <!-- <h5 class="mb-4">Cart (<span>2</span> items)</h5> -->
+              <div class="row mb-4">
+                <div class="col-md-5 col-lg-3 col-xl-3 col-4">
+                  <div class="view zoom overlay z-depth-1 rounded cart_image mb-3 mb-md-0">
+                    <img class="img-fluid" id="p_img" src="./images/uv1.jpg" alt="Sample">
+
+                    <!-- <a href="#!">
+                    <div class="mask">
+                      <img class="img-fluid w-100"
+                        src="./images/uv1.jpg">
+                      <div class="mask rgba-black-slight"></div>
+                    </div>
+                  </a> -->
+                  </div>
+                  <p></p>
+                </div>
+                <div class="prodmaindiv col-md-7 col-lg-9 col-xl-9 col-8">
+                  <div>
+                    <div class="prodmain">
+                      <div class="prod_name">
+                        <h5 id="prod_name">Aqua Shine Sheet Mask</h5>
+                        <input type="number" value="1" min="1" aria-label="Search" class="form-control">
+                        <!-- <p class="mb-3 text-muted text-uppercase small">Shirt - blue</p> -->
+                        <!-- <p class="mb-2 text-muted text-uppercase small">QTY:<span id="qty"
+                            style="font-size: 16px;color: black;"> 1</span></p> -->
+                        <!-- <p class="mb-3 text-muted text-uppercase small">Size: M</p> -->
+                      </div>
+                      <div>
+                        <!-- <div class="def-number-input number-input" style="display: flex; flex-direction: column;"> -->
+                          <!-- <div class="product_description__quantity"> -->
+                            <!-- <input type="number" value="1" min="1" aria-label="Search" class="form-control"> -->
+                            <!-- <a href="">
+                                <button class="">Add to Cart</button>
+                            </a> -->
+                          <!-- </div> -->
+                          <!-- <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                          class="minus decrease"></button> -->
+                          <!-- <input class="quantity" min="0" name="quantity" value="1" type="number"> -->
+                          <!-- <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                          class="plus increase"></button> -->
+                        <!-- </div> -->
+                        <!-- <small id="passwordHelpBlock" class="form-text text-muted text-center">
+                        (1 item addeed)
+                      </small> -->
+                      </div>
+                    </div>
+
+                    <div class="d-flex mt-4 justify-content-between align-items-center rem-item">
+                      <div class="product_list">
+                        <a href="#!" type="button" class="text-uppercase" style="color: black;"><i
+                            class="fas fa-trash-alt mr-1" style="color: black"></i>Remove product</a><br><br>
+                            <span id="prod_price" style="color: black;font-size: 1.2em;">₹4,600/-</span>
+
+                        <!-- <a href="#!" type="button" class="card-link-secondary small text-uppercase"><i
+                          class="fas fa-heart mr-1"></i> Move to wish list </a> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- <hr class="mb-4"> -->
+              <!-- <p class="text-warning mb-0"><i class="fas fa-info-circle mr-1"></i> Buy any other product</p> -->
+            </div>
+          </div>
+          <!-- Card -->
+
+
+          <!-- Card -->
+          <!-- <div class="mb-3">
+          <div class="pt-4">
+            <h5 class="mb-4 mt-4">Expected shipping delivery</h5>
+            <p class="mb-0"> Monday 10am-4pm</p>
+          </div>
+        </div> -->
+          <!-- Card -->
+          <hr>
+          <!-- Card -->
+          <div class="" style="margin-top: 15%;padding-bottom: 30px;">
+            <div class="pt-4">
+              <h5 class="mb-4">We accept</h5>
+
+              <img class="mr-4" width="40px"
+                src="https://mdbootstrap.com/wp-content/plugins/woocommerce-gateway-stripe/assets/images/visa.svg"
+                alt="Visa">
+              <img class="mr-4" width="40px"
+                src="https://mdbootstrap.com/wp-content/plugins/woocommerce-gateway-stripe/assets/images/amex.svg"
+                alt="American Express">
+              <img class="mr-4" width="40px"
+                src="https://mdbootstrap.com/wp-content/plugins/woocommerce-gateway-stripe/assets/images/mastercard.svg"
+                alt="Mastercard">
+              <img class="mr-4" width="40px"
+                src="https://mdbootstrap.com/wp-content/plugins/woocommerce/includes/gateways/paypal/assets/images/paypal.png"
+                alt="PayPal acceptance mark">
+            </div>
+          </div>
+          <!-- Card -->
+        </div>
+        <!--Grid column-->
+
+      </div>
+      <!-- Grid row -->
+    </section>
+    <!--Section: Block Content-->
+
+
+
+
+   <!-- Modal 1 -->
+    <!-- bootstrap modal starts here for Log in-->
+    <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content" style="background-color: rgb(240,240,240);">
+              <div class="modal-header">
+                  <!-- <h3>LOGIN</h3> -->
+                  <h5 class="modal-title" id="exampleModalLabel" style="font-weight:
+               bold;">LOGIN</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+              </button>
+              </div>
+
+              <div class="modal-body">
+                  <form>
+                      <div class="form-group">
+                          <!-- <label for="recipient-name" class="col-form-label" style="font-weight:bold;">Username or Email Address *</label> -->
+                          <input type="text" class="form-control" placeholder="Email Id" id="recipient-name">
+                      </div>
+
+                      <div class="form-group">
+                          <!-- <label for="recipient-name" class="col-form-label" style="font-weight:bold;">Password *</label> -->
+                          <input type="password" class="form-control" placeholder="Password" id="recipient-name">
+                      </div>
+                  
+                      <button type="button" class="btn btn-warning" style="font-weight:bold;">SIGN IN </button>
+
+                      <!-- <div class="form-group">
+                          <label for="message-text" class="col-form-label">Message:</label>
+                          <textarea class="form-control" id="message-text"></textarea>
+                      </div> -->
+                  </form>
+              </div>
+              <div class="modal-footer">
+               <!-- Forgot Password -->
+               <!-- opens a forgot password modal -->
+                  <a href="#exampleModal4" data-toggle="modal" data-target="#exampleModal4" style="color: red; font-weight: bold;">Forgot Password?</a>
+                  <!-- <a href="#" data-toggle="modal" data-target="exampleModal4" style="color: red; font-weight: bold;">Forgot Password?</a> -->
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- bootstrap Modal for Log in ends here  -->
+
+
+
+  <!-- Modal 2 -->
+  <!-- bootstrap 2 modal starts here for Sign Up-->
+  <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content" style="background-color: rgb(240, 240, 240)">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel" style="font-weight:bold;">REGISTER</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+
+              <div class="modal-body">
+                  <form>
+                      <div class="form-group">
+                          <!-- <label for="recipient-name" class="col-form-label" style="font-weight:bold;">Full Name *</label> -->
+                          <input type="text" class="form-control" placeholder="Full Name" id="recipient-name">
+                      </div>
+                      <div class="form-group">
+                          <!-- <label for="message-text" class="col-form-label" style="font-weight:bold;">Email *</label> -->
+                          <input type="email" class="form-control" placeholder="Email" id="recipient-name">
+                      </div>
+
+                      <div class="form-group">
+                          <!-- <label for="message-text" class="col-form-label" style="font-weight:bold;">Password *</label> -->
+                          <input type="password" class="form-control" placeholder="Password" id="recipient-name">
+                      </div>
+
+                      <div class="form-group">
+                          <!-- <label for="message-text" class="col-form-label" style="font-weight:bold;">Confirm Password *</label> -->
+                          <input type="password" class="form-control" placeholder="Confirm Password" id="recipient-name">
+                      </div>
+                      <button type="button" class="btn btn-warning">SIGN UP</button>
+                  </form>
+              </div>
+
+              <div class="modal-footer">
+                  <!-- <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-warning">SUBMIT</button> -->
+              </div>
+          </div>
+      </div>
+  </div>
+<!-- bootstrap Modal Sign Up 2 ends here  -->
+
+
+ 
+<!-- Modal 3 -->
+<!-- bootstrap 3 for forgot password -->
+<div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <!-- Modal Content -->
+          <div class="modal-header" tabindex="-1">
+              <div class="login">
+                  <h3>Log in <span> or </span> Create Account</h3>
+              </div>
+
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
+
+          <!-- body -->
+          <div class="modal-body">   
+              <div class="createacc">
+                  <label style="font-weight:bold;">LOG IN WITH OTP</label>
+                  <form>
+                      <input type="text" class="form-control" placeholder="Enter otp" id="otp">
+
+                      <div class="form-group">
+                          <label for="message-text" class="col-form-label" style="font-weight:bold;">Email *</label>
+                          <input type="email" class="form-control" placeholder="Enter Password" id="recipient-name">
+                      </div>
+                      <!-- <div class="inputnum">
+                          <input type="email" id="otpEmail" class="input-text" name="otpEmail" title="Enter Email" placeholder="Enter your registered email address"	aria-required="true" />
+                      </div> -->
+                      <button class="btn btn-outline-warning" type="submit">GET OTP</button>
+                  </form> 
+              
+                  <p class="mt-2" style="font-weight: bold;">LOG IN WITH PASSWORD</p>
+                  <form method="post" action="">
+                      <!-- <input type="hidden" name="checkOutLogin" value="YES"> -->
+                      <input type="email" class="form-control" placeholder="Email" id="recipient-name">
+
+                      <div class="pswd mt-2">
+                          <input type="password" type="password" autocomplete="off" class="form-control"
+                          id="login_password" title="Password" placeholder="Password" aria-required="true">
+                          <!-- <input name="login_password" type="password" autocomplete="off" class="password-text"
+                              id="login_password" title="Password" placeholder="  Enter password" aria-required="true" /> -->
+                          <!-- <a data-toggle="modal" data-target="#exampleModal3"><span id="red">Forgot?</span></a> -->
+                          <a data-toggle="modal" data-target="#exampleModal4" style="color: red; font-weight: bold;">Forgot Password?</a>
+                      </div>
+                    
+                      <!-- <div class="custom-control custom-checkbox check-left mt-2"> -->
+                          <div class="custom-control custom-checkbox mt-2 save_info">
+                              <input type="checkbox" style="color: #f3b229 !important;" class="custom-control-input" id="save-info">
+                              <label class="custom-control-label" for="save-info">Keep me Logged in</label>
+                          </div>
+                          <!-- <input type="checkbox" class="custom-control-input" id="defaultIndeterminate3" checked>
+                          <label class="custom-control-label" for="defaultIndeterminate3">Keep me Logged in</label> -->
+                      <!-- </div> -->
+                      <button type="submit" class="btn btn-outline-warning mt-2">Submit</button>
+                  </form>	
+                  
+                  <p class="hr-line-social mt-2">or</p>
+                  
+                  <span class="question" style="color: black;"> Don't have an account?</span>
+                  <a data-toggle="modal" id="modid"
+                      data-dismiss="modal"
+                      data-target="#exampleModal2"> <span id="red">Create your account here</span></a>							
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- bootstrap Modal for forgot password 3 ends here  -->
+
+
+
+
+<!-- Modal 4 for forgot Password -->
+  <!-- password reset -->
+  <div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content" style="background-color: rgb(240, 240, 240)">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel" style="font-weight:bold;">RESET PASSWORD </h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+              </div>
+
+              <div class="modal-body">
+                  <form>
+                      <!-- <div class="form-group">
+                          <label for="recipient-name" class="col-form-label" style="font-weight:bold;">Name *</label>
+                          <input type="text" class="form-control" placeholder="Enter your full name" id="recipient-name">
+                      </div> -->
+                      <div class="form-group">
+                          <label for="message-text" class="col-form-label" style="font-weight:bold;">Email *</label>
+                          <input type="email" class="form-control" placeholder="Email" id="recipient-name">
+                      </div>
+
+                      <!-- <div class="form-group">
+                          <label for="message-text" class="col-form-label" style="font-weight:bold;">Password *</label>
+                          <input type="password" placeholder="Enter Password" class="form-control" id="recipient-name">
+                      </div> -->
+                      <button type="button" class="btn btn-warning">SEND</button>
+                  </form> 
+              </div>
+
+              <div class="modal-footer">
+                  <p>Remember your password?<a href="#exampleModal1" data-toggle="modal" data-target="#exampleModal1" style="color: red;"> Login</a></p>
+                  <!-- <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-warning">SUBMIT</button> -->
+              </div>
+          </div>
+      </div>
+  </div>
+<!-- Password reset 4 ends here  -->
+
+
+
+  
+<!-- Footer starts here-->
+<div id="footer_js">
+  <!-- The navbar code is inside the footer.js  -->
+</div>
+<!-- Footer ends here -->
+
+
+
+
+
+    <!-- header.js starts here -->
+    <script type="module" src="./js/header.js" defer></script>
+    <!-- header.js ends here -->
+
+    
+  <!-- header.js starts here -->
+  <script type="module" src="./js/footer.js"></script>
+  <!-- header.js ends here -->
+
+
+
+    <script type="module" src="js/cartlist.js"></script>
+    <script type="module" src="js/checkout.js"></script>
+    <script type="module" src="js/topscroll.js"></script>
+
+
+    <script>
+
+      //Get the button
+      var mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+        hideSearch();
+      };
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+
+
+      var search_field = document.getElementById("search_field");
+
+
+      // hide the search field
+
+      function hideSearch() {
+
+        if (screen.width < 700) {
+          if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            search_field.style.display = "none";
+          } else {
+            search_field.style.display = "block";
+          }
+        }
+      }
+    </script>
+  </body>
+
+</html>

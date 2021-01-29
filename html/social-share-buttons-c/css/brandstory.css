@@ -1,0 +1,624 @@
+/* First Section Css but name given as fifth_sectionfron1 style.css */
+
+body {
+    width: 100% !important;
+    font-family: "Open Sans", sans-serif !important;
+}
+
+
+/*  */
+
+:root {
+    --ultravfontcolor: #f3b229;
+    --ultravheaderfontstyle: "Merriweather", serif;
+    --ultravparafontstyle: "Open Sans", sans-serif;
+    --ultravheaderfontsize: 2.6em;
+    --ultravparafontsize: 1rem;
+}
+
+
+/*  */
+
+.fifth_section1 {
+    width: 100%;
+    /* height: 70vh; */
+    height: auto;
+    background-image: url("../images/uvbg.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 40px;
+}
+
+.video_star1 {
+    /* border: 2px solid rgb(102, 255, 0); */
+    /* display: flex; */
+    width: 100%;
+    max-height: 100%;
+    min-height: 100%;
+}
+
+.fifth_section_div2 {
+    display: flex;
+    /* border: 6px solid rgb(38, 0, 255); */
+    justify-content: space-evenly;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.video_star1 p {
+    max-width: 60vw;
+    margin: auto;
+    text-align: center;
+    font-size: 17px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.video_star1 h1 {
+    padding: 50px 0px;
+    text-align: center;
+    font-family: "Merriweather", serif;
+    font-size: 3em;
+    color: white;
+}
+
+.image_div1 p {
+    /* font-family: "Open Sans", sans-serif !important; */
+    color: white;
+    font-size: 0.9em;
+    padding-top: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.image_div1 img {
+    max-width: 100%;
+    max-height: 100%;
+    filter: invert(1);
+    padding: 10px;
+}
+
+.image_div1 {
+    max-width: 80vw;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.image_div1__img {
+    padding: 6px;
+    max-width: 70px;
+    max-height: 70px;
+    border-radius: 100%;
+    border: 2px solid white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+}
+
+.image_div1__img img {
+    display: block;
+    width: 100%;
+}
+
+.video_star1 h5 {
+    max-width: 70vw;
+    margin: auto;
+}
+
+
+/* brand second css starts here  ................. */
+
+
+/* brand second section ends here ............ */
+
+.brand_second_section {
+    display: flex;
+    height: 20vh;
+    flex-direction: row;
+    text-align: center;
+}
+
+.brand_second_section p {
+    display: flex;
+    flex-direction: row;
+}
+
+.brand_story {
+    font-family: "Merriweather", serif;
+    font-size: 1.8rem;
+    margin-left: 5%;
+}
+
+.brand_second_section h5 {
+    flex-direction: row;
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: "Open Sans", sans-serif;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+/* Brand Second Ends here  */
+
+
+/* Third  section starts here  */
+
+
+/*  Brand third Section css starts here */
+
+.brand_third_section {
+    display: block;
+    max-width: 80vw;
+    margin: auto;
+}
+
+.drprofile_div {
+    display: flex;
+    /* max-width: 70vw; */
+}
+
+.drprofile_list {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.drprofile_list ul li {
+    margin-left: 50px;
+    list-style: none;
+    padding-top: 20px;
+    font-size: 1.1rem;
+    font-family: "Open Sans", sans-serif;
+    color: black;
+    text-align: justify;
+    padding-bottom: 20px;
+}
+
+.drprofile_image {
+    flex: 0.4;
+    max-height: 100%;
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    display: block;
+    /* margin-right: auto; */
+    margin-top: 20px;
+    /* background-color: rgb(0, 255, 255); */
+}
+
+.drprofile_image img {
+    height: 65%;
+    width: 65%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: contain;
+    /* background-color: rgb(0, 255, 255); */
+}
+
+.drprofile_image h1 {
+    font-weight: bold;
+    padding-top: 45px;
+    font-size: 1.5em;
+    font-family: "Merriweather", serif;
+    text-align: center;
+}
+
+.drprofile_image h2 {
+    font-family: "Merriweather", serif;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.drprofile_list {
+    flex: 1;
+}
+
+
+/*  Brand third section ends here ........ */
+
+
+/* 4th Section Css here ....... */
+
+
+/* Fourth Section starts here*/
+
+.brand_fourth_section {
+    max-width: 85vw;
+    margin: 40px 0px;
+    margin: auto;
+    position: relative;
+    top: 0;
+}
+
+.brand_fourth_section h2 {
+    font-family: "Merriweather", serif;
+    text-align: center;
+    color: black;
+    font-size: 2.1em;
+    margin-top: 40px;
+}
+
+
+/* 4th section css Ends here ................  */
+
+.brand {
+    max-width: 85vw;
+    margin: 40px 0px;
+    margin: auto;
+    position: relative;
+    top: 0;
+}
+
+.brand h2 {
+    font-family: "Merriweather", serif;
+    text-align: center;
+    color: black;
+    font-size: 2.1em;
+    margin-top: 40px;
+}
+
+.brand1 {
+    display: none;
+    max-width: 85vw;
+    margin: auto;
+}
+
+.brand1 h2 {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 2.1em;
+    font-family: "Merriweather", serif;
+}
+
+.brand1 h6 {
+    max-width: 70vw;
+    text-align: justify;
+    font-size: 1.1em;
+    margin: auto;
+    font-family: "Open Sans", sans-serif;
+    /* text-align-last: center; */
+}
+
+
+/* 5th section css starts here .................*/
+
+.brand_fifth_section {
+    max-width: 85vw;
+    margin: auto;
+}
+
+.brand_fifth_section h2 {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 2.1em;
+    font-family: "Merriweather", serif;
+}
+
+.brand_fifth_section h6 {
+    max-width: 70vw;
+    text-align: justify;
+    font-size: 1.1em;
+    margin: auto;
+    font-family: "Open Sans", sans-serif;
+    text-align-last: center;
+}
+
+
+/* 5th section css ends here ................... */
+
+
+/* Cards for the 4th and 5th css both together ......  */
+
+.item-card {
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.item-card-title {
+    font-size: 15px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.item-card-title i {
+    font-size: 15px;
+    transition: 1s;
+    cursor: pointer;
+    color: var(--ultravfontcolor);
+}
+
+.card-title i:hover {
+    transform: scale(1.25) rotate(100deg);
+    color: #18d4ca;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card-text {
+    height: 20px;
+}
+
+.card::before,
+.card::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: scale3d(0, 0, 1);
+    transition: transform 0.3s ease-out 0s;
+    background: rgba(255, 255, 255, 0.1);
+    content: "";
+    pointer-events: none;
+}
+
+.card::before {
+    transform-origin: left top;
+}
+
+.card::after {
+    transform-origin: right bottom;
+}
+
+.card:hover::before,
+.card:hover::after,
+.card:focus::before,
+.card:focus::after {
+    transform: scale3d(1, 1, 1);
+}
+
+
+/* 4th and 5th display :block */
+
+.brand {
+    display: none !important;
+}
+
+.brand_fourth_section {
+    display: block;
+}
+
+.brand_fifth_section {
+    display: block;
+}
+
+
+/*  */
+
+.owl-nav button {
+    position: absolute;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+    top: 45%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.38) !important;
+    /* background-color: lavender !important; */
+    font-size: 50px !important;
+}
+
+.owl-nav button.owl-prev {
+    /* background-color: black !important; */
+    left: 1px;
+}
+
+.owl-nav button.owl-next {
+    /* color: black !important; */
+    right: 1px;
+}
+
+.owl-dots {
+    text-align: center;
+    padding-top: 15px;
+}
+
+.owl-dots button.owl-dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    display: inline-block;
+    background: lavender !important;
+    margin: 0 3px;
+}
+
+.owl-dots button.owl-dot.active {
+    background-color: #ecb02e !important;
+}
+
+.owl-dots button.owl-dot:focus {
+    outline: none;
+    background-color: lavender;
+}
+
+.owl-nav button:focus {
+    outline: none;
+    background-color: lavender;
+}
+
+
+/*  */
+
+
+/* Media query */
+
+
+/* Brand story Page starts herer */
+
+
+/* section 1 starts here */
+
+@media only screen and (max-width: 700px) {
+    .drprofile_div {
+        flex-direction: column;
+    }
+    .drprofile_list {
+        margin-top: 10px;
+    }
+    .drprofile_image h1 {
+        width: 100%;
+        /* margin-top: 10%; */
+        font-size: 1.2em;
+        /* margin-left: 30px; */
+    }
+    .drprofile_image h2 {
+        margin-top: 10px;
+        font-size: 1em;
+    }
+    .fifth_section1 {
+        background-size: cover !important;
+        background-size: 100% 100%;
+        height: 106vh !important;
+    }
+    /* Time Revol */
+    .video_star1 h1 {
+        margin:25px 0px;
+        padding: 0px 0px;
+        width: 100% !important;
+        font-size: 1.4em !important;
+    }
+    .video_star1 {
+        height: 80vh !important;
+    }
+    .video_star1 p {
+        max-width: 88vw;
+        font-size: 0.9em;
+    }
+    .image_div1 {
+        margin-top: 20px !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .fifth_section_div2 {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .fifth_section_div2 p {
+        font-size: 0.9em;
+    }
+    /* section 1 ends here */
+    /* Section 2 starts here */
+    .drprofile_image img {
+        width: 50%;
+        height: 50%;
+    }
+    .drprofile_list ul li {
+        margin: 0px 0px;
+        font-size: 1em;
+        text-align: left;
+        padding-bottom: 4px
+    }
+    .drprofile_list ul li i {
+        font-size: 15px !important;
+    }
+    /* section 2 ends here */
+    /* section 4 starts here */
+    .brand_fourth_section h2 {
+        font-size: 1.3em;
+    }
+    /* section 4 ends here */
+    /* Image Section starts here*/
+    .brand_fifth_section h2 {
+        font-size: 1.3em;
+    }
+    .brand_fifth_section h6 {
+        font-size: 1em;
+        text-align: left;
+    }
+    .card {
+        margin-top: 20px;
+    }
+    /* Footer Media Query starts here*/
+    .support {
+        margin-top: -50px;
+    }
+    .vl2 {
+        display: none;
+    }
+    .vl {
+        display: none;
+    }
+    /* 4th and 5th display :block */
+    .brand {
+        margin-bottom: 10% !important;
+        display: block !important;
+    }
+    .brand h2 {
+        font-size: 1.2em !important;
+    }
+    .brand1 {
+        display: block !important;
+    }
+    .brand1 h2 {
+        font-size: 1.3em !important;
+    }
+    .brand1 h6 {
+        max-width: 90vw !important;
+        text-align: center !important;
+        font-size: 1em !important;
+    }
+    /* display : block */
+    .brand_fourth_section {
+        display: none
+    }
+    .brand_fifth_section {
+        display: none;
+    }
+    .shopping_product {
+        max-width: 90vw !important;
+        margin: auto;
+    }
+    /* Footer Media Query Ends here */
+}
+
+
+/* width:400px */
+
+
+/* width:300px */
+
+/* @media only screen and (max-width: 300px) {
+    .fifth_section1 {
+        min-height: 165vh;
+    }
+} */
+
+
+/* g4 */
+
+
+@media only screen and (max-width: 360px){
+.fifth_section1 {
+    min-height: 140vh !important;
+}
+}
+
+
+@media only screen and (max-width: 420px) {
+    .fifth_section1 {
+        min-height: 110vh;
+    }
+}
+
+
+
+
+/* width:321 px */
+
+
+/* @media only screen and (max-width: 321px) {
+    .fifth_section1 {
+        min-height: 190vh;
+    }
+}
+ */
+/* width : 411 px*/
+/* Brand story Page ends here  */
+/* Media query ends here */

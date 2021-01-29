@@ -1,0 +1,230 @@
+
+    .cart_image{
+        width: 65%;
+        object-fit: contain;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .disc_code a{
+        text-decoration: none !important;
+        /* list-style: none; */
+    } 
+    .rem-item a{
+        text-decoration: none !important;
+    }
+    .list-group-flush li{
+        font-size: 1.1em;
+    }
+    .list-group-flush span{
+        font-size: 1.1em;
+    }
+
+    .cart_total button{
+        cursor: pointer;
+        background-color: #f3b229 !important;
+        border: none;
+        color: black;   
+        padding: 6px 15px;
+        font-weight: 500;
+        font-size: 1em;
+        border-radius: 3px;
+        /* font-weight: bold; */
+        margin-top: 50px;
+        border: none !important;
+        outline: none !important;
+    }
+    .cart_total button:hover {
+        background-color: #ebc66f !important;
+        color: black !important;
+        border: none !important;
+        outline: none !important;
+    }
+    .cart_total a{
+        font-size: 1em;
+        text-decoration: none !important;
+    }
+    .product_list span span{
+        color: black !important;
+    }
+    .prodmain{
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    /* checkout css */  
+    .amount button:hover {
+        background-color: #dfb568 !important;
+    }
+    
+    .discount a {
+        text-decoration: none;
+        color: #f3b239;
+    }
+    
+    label {
+        font-weight: bold;
+    }
+    
+    .billing_details h5 {
+        font-weight: bold;
+    }
+    
+    .amount h5 {
+        font-weight: bold;
+    } 
+    .amount a {
+        text-decoration: none !important;
+    }
+    
+    .amount ul li {
+        font-size: 1.1em;
+        /* font-family: normal; */
+        font-family: "Open Sans, sans-serif" !important;
+        color: black !important;
+        /* font-weight: bold; */
+    }
+    
+    .amount span {
+        font-size: 1.1em;
+        /* font-family: normal; */
+        font-family: "Open Sans, sans-serif" !important;
+        color: black !important;
+    }
+    .custom-radio .custom-control-label::before {
+        background-color: white !important;
+    }
+    .custom-control-input:checked~.custom-control-label::before {
+        /* color: #fff !important; */
+        border-color: #000000 !important;
+        background-color: #f3b229 !important;
+
+    }
+    .back_to_cart{
+        color: #f3b239 !important;
+        text-decoration: none !important;
+        font-weight: 900;
+      }
+
+    .checkout h4{
+        font-size: 2em;
+    }
+
+
+    /* Shipping Css here */
+    .shipp_info a{
+        text-decoration: none !important;
+    }
+    .shipp_info a:hover{
+        color: black !important;
+    }
+
+
+
+
+    @media only screen and (max-width: 700px) {
+    
+    .prodmain h5{
+        font-size: 1em;
+    }
+    .prod_name h5 {
+        width: 150%;
+        font-size: 0.9em;
+    } 
+
+    .cart_image img{
+        width: 40%;
+    }
+
+    .prod_name i[
+        font-size: 0.9em;
+    ]
+
+    .rem_prod i{
+        font-size: 0.9em;
+    }
+
+    .sub_total_table .chk_btn{
+        margin-left: 0px !important;
+
+    }
+    .cart_image{
+        width: 100%;
+        margin-top: 20px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .quant {
+        width: 20%;
+    }
+    .prodmain{
+        /* display: inline-block; */
+        flex-direction: column !important;
+    }
+    .product_list a {
+    font-size: 0.8em;
+    }
+    .rem-item span{
+        font-size: 1em !important;
+    }
+
+    .rem-item a{
+        margin-left: -12px;
+    }
+    .number-input input{
+        width: 25% !important;
+    }
+    .cartmaindiv h2{
+        font-size: 1.2em !important;
+    }
+    /* checkout */
+    .checkout h4{
+        font-family: var(--ultravparafontstyle) !important;
+        font-size: 1.4em !important;
+    }
+
+    .amount ul li img {
+        width: 30%;
+        height: 20%;
+    }
+    .amount ul li {
+        font-size: 1em;
+    }
+    .country select {
+        padding: 10px 0px;
+        height: auto !important;
+    }
+    .contry select option {
+        /* width: 50% !important; */
+    }
+    .check_main_class {
+        max-width: 95vw !important;
+    }
+    .billing_details h3{
+        font-size: 1.3em;
+    }
+    .cont_info h5{
+        font-size: 1.1em;
+    } 
+    .update_info label{
+        font-size: 0.8em;
+    }
+    .contact_maininfo h5{
+        font-size: 1em;
+    }
+    .country label{
+        font-size: 1em;
+    }
+    .ship_address label {
+        font-size: 0.9em; 
+    }
+    .save_info label{
+        font-size: 0.9em; 
+    }
+    .payment label{
+        font-size: 0.9em; 
+    }
+    }
